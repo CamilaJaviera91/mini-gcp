@@ -18,7 +18,6 @@ def get_latest_input_file():
     if not files:
         raise FileNotFoundError("❌ No input CSV files found in 'data/extract/'")
 
-    # Extraer el número del archivo
     files_with_numbers = []
     for f in files:
         match = re.search(rf"{FILE_PREFIX}(\d+)\.csv", f)
