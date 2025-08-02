@@ -1,0 +1,2 @@
+total_rows,nulls_per_column,invalid_prices,min_date,max_date
+4742,"{'id': 0, 'customer': 0, 'product': 0, 'price': 0, 'sale_date': 0}",0,2023-08-02,2025-08-01
