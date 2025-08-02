@@ -15,6 +15,10 @@ time.sleep(2)
 
 subprocess.run(["python", "load/load_to_duckdb.py"])
 
+time.sleep(2)
+
+subprocess.run(["python", "export/export_to_postgres.py"])
+
 try:
     print("Pipeline running. Press Ctrl+C to stop.")
     watcher_process.wait()
