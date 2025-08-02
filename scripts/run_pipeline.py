@@ -9,6 +9,10 @@ subprocess.run(["python", "scripts/generate_fake_data.py"])
 
 time.sleep(2)
 
+subprocess.run(["python", "extract/extract_from_local.py"])
+
+time.sleep(2)
+
 subprocess.run(["python", "transform/transform_data_beam.py"])
 
 time.sleep(2)
