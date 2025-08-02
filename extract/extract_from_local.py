@@ -1,4 +1,3 @@
-# extract_from_local.py
 import os
 import shutil
 import logging
