@@ -7,6 +7,10 @@ time.sleep(2)
 
 subprocess.run(["python", "scripts/generate_fake_data.py"])
 
+time.sleep(2)
+
+subprocess.run(["python", "transform/transform_data_beam.py"])
+
 try:
     print("Pipeline running. Press Ctrl+C to stop.")
     watcher_process.wait()
