@@ -11,6 +11,10 @@ time.sleep(2)
 
 subprocess.run(["python", "transform/transform_data_beam.py"])
 
+time.sleep(2)
+
+subprocess.run(["python", "load/load_to_duckdb.py"])
+
 try:
     print("Pipeline running. Press Ctrl+C to stop.")
     watcher_process.wait()
