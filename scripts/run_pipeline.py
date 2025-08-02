@@ -19,6 +19,10 @@ time.sleep(2)
 
 subprocess.run(["python", "export/export_to_postgres.py"])
 
+time.sleep(2)
+
+subprocess.run(["python", "validate/validate_data.py"])
+
 try:
     print("Pipeline running. Press Ctrl+C to stop.")
     watcher_process.wait()
