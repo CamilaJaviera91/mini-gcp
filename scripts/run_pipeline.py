@@ -9,7 +9,7 @@ subprocess.run(["python", "scripts/generate_fake_data.py"])
 
 time.sleep(2)
 
-subprocess.run(["python", "extract/extract_from_local.py"])
+subprocess.run(["python", "initial_validation/initial_validation.py"])
 
 time.sleep(2)
 
