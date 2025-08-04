@@ -9,29 +9,23 @@ def main():
     db_path = os.path.join(DUCKDB_DIR, "sales.duckdb")
     con = duckdb.connect(db_path)
 
-    con.execute("""
-        CREATE TABLE IF NOT EXISTS sales (
-            id INTEGER,
-            customer VARCHAR,
-            product VARCHAR,
-            price DOUBLE,
-            sale_date DATE
-        )
-    """)
-
     csv_files = sorted(glob.glob("data/processed/clean_sales_*.csv"))
-
     if not csv_files:
-        print("❌ No hay archivos clean_sales_*.csv en data/processed/")
+        print("❌ There's no clean_sales_*.csv in data/processed/")
         return
 
     latest_file = csv_files[-1]
 
     con.execute(f"""
-        INSERT INTO sales
+        CREATE OR REPLACE TABLE sales AS
         SELECT * FROM read_csv_auto('{latest_file}', header=True)
     """)
-    print(f"✅ Último archivo cargado: {latest_file}")
+
+    print(f"✅ Last file: {latest_file}")
+
+    df = con.execute("SELECT * FROM sales").df()
+    
+    print(df.head())
 
     con.close()
 
