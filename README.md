@@ -79,6 +79,12 @@ pip install -r requirements.txt
 
 ---
 
+## 📬 Feedback or Questions?
+
+Feel free to open an issue or submit a PR!
+
+---
+
 ## 👩‍💻 Author
 Camila Muñoz – @CamilaJaviera91
 💬 Happy to connect and discuss data pipelines or open source!
