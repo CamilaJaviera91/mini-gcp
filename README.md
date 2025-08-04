@@ -21,3 +21,14 @@ This project simulates a **modern data pipeline** architecture, entirely **local
 ```
 
 ---
+
+## ⚙️ Tools & Libraries
+
+- 🐍 Python
+- 🦆 [DuckDB](https://duckdb.org/)
+- ⚙️ [Apache Beam](https://beam.apache.org/)
+- 🧪 `pyspark`, `Faker`, `unidecode`, `watchdog`, `apache-beam[gcp]`, `pandas`, `python-dotenv`, `duckdb`, `sqlalchemy`, `psycopg2-binary`
+- 🐘 PostgreSQL
+- 📦 Local folders instead of cloud storage
+
+---
