@@ -46,3 +46,13 @@ This project simulates a **modern data pipeline** architecture, entirely **local
 - 📦 Local folders instead of cloud storage
 
 ---
+
+## ✅ Requirements
+
+Install dependencies:
+
+```
+pip install -r requirements.txt
+```
+
+---
