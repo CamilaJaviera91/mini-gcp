@@ -17,19 +17,24 @@ os.makedirs(output_dir, exist_ok=True)
 file_number = get_next_file_number(output_dir, "raw_sales_")
 output_file = f"{output_dir}/raw_sales_{file_number}.csv"
 
+num_records = 5000
+num_errors = 250
+
 products = ["Smartphone", "Laptop", "Headphones", "Keyboard", "Monitor",
             "Tablet", "Speaker", "Camera", "Printer", "Mouse"]
+
+error_indices = set(random.sample(range(1, num_records + 1), num_errors))
 
 with open(output_file, mode="w", newline="", encoding="utf-8") as f:
     writer = csv.writer(f)
     writer.writerow(["id", "customer", "product", "price", "sale_date"])
-    for i in range(1, 5001):
+    for i in range(1, num_records + 1):
         customer = fake.name()
         product = random.choice(products)
         price = round(random.uniform(10.00, 1000.00), 2)
         sale_date = fake.date_between(start_date="-2y", end_date="today")
 
-        if random.random() < 0.05:
+        if i in error_indices:
             error_type = random.choice(["missing_customer", "invalid_price", "missing_date", "invalid_product"])
             if error_type == "missing_customer":
                 customer = ""
