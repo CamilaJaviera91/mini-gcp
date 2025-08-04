@@ -78,3 +78,9 @@ pip install -r requirements.txt
 - [ ] Extend validation rules with Great Expectations
 
 ---
+
+## 👩‍💻 Author
+Camila Muñoz – @CamilaJaviera91
+💬 Happy to connect and discuss data pipelines or open source!
+
+---
