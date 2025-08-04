@@ -22,6 +22,20 @@ This project simulates a **modern data pipeline** architecture, entirely **local
 
 ---
 
+## 📊 Data Folder Overview
+
+- **data/raw/:** Initial synthetic data (e.g., raw_sales_1.csv)
+
+- **data/extract/:** Copied file ready for transformation
+
+- **data/processed/:** Cleaned file after transformation
+
+- **data/validation/:** Schema reports in .csv and .json
+
+- **data/warehouse/:** Final data stored in DuckDB (sales.duckdb)
+
+---
+
 ## ⚙️ Tools & Libraries
 
 - 🐍 Python
@@ -32,15 +46,3 @@ This project simulates a **modern data pipeline** architecture, entirely **local
 - 📦 Local folders instead of cloud storage
 
 ---
-
-## 📊 Folder Overview
-
-- data/raw/: Initial synthetic data (e.g., raw_sales_1.csv)
-
-- data/extract/: Copied file ready for transformation
-
-- data/processed/: Cleaned file after transformation
-
-- data/validation/: Schema reports in .csv and .json
-
-- data/warehouse/: Final data stored in DuckDB (sales.duckdb)
