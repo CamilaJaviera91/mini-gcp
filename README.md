@@ -56,3 +56,13 @@ pip install -r requirements.txt
 ```
 
 ---
+
+## 🚧 Future Improvements
+
+- [ ] Add Airflow DAG for orchestration
+
+- [ ] Create Looker Studio or local dashboards
+
+- [ ] Extend validation rules with Great Expectations
+
+---
