@@ -4,6 +4,18 @@ This project simulates a **modern data pipeline** architecture, entirely **local
 
 ---
 
+## 🧠 Why "Mini GCP"?
+
+This repo mimics a GCP-like modular pipeline (with stages like Cloud Functions, Dataflow, BigQuery), but:
+
+- 🆓 Works locally
+
+- 🧪 Ideal for testing and learning
+
+- 💸 No cloud cost involved
+
+---
+
 ## 📁 Project Structure
 
 ```
