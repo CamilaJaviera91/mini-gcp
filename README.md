@@ -41,6 +41,8 @@ This repo mimics a GCP-like modular pipeline (with stages like Cloud Functions, 
 
 - **data/extract/:** Copied file ready for transformation
 
+- **data/initial_validation/:** validation raw reports in .csv and .json
+
 - **data/processed/:** Cleaned file after transformation
 
 - **data/validation/:** Schema reports in .csv and .json
