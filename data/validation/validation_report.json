@@ -1,0 +1,13 @@
+{
+    "total_rows": 4750,
+    "nulls_per_column": {
+        "id": 0,
+        "customer": 0,
+        "product": 0,
+        "price": 0,
+        "sale_date": 0
+    },
+    "invalid_prices": 0,
+    "min_date": "2023-08-05",
+    "max_date": "2025-08-04"
+}
