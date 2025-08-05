@@ -1,0 +1,2 @@
+total_rows,nulls_per_column,missing_customers,invalid_prices,invalid_dates,min_date,max_date,invalid_products,total_issues
+5000,"{'id': 0, 'customer': 60, 'product': 0, 'price': 0, 'sale_date': 72}",60,58,72,2023-08-05,2025-08-04,60,250
