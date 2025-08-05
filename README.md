@@ -20,16 +20,17 @@ This repo mimics a GCP-like modular pipeline (with stages like Cloud Functions, 
 
 ```
 .
-├── data/             # Data storage layer (raw, processed, validated, warehouse)
-├── extract/          # Data extraction logic
-├── transform/        # Data transformation using Apache Beam
-├── load/             # Load cleaned data into DuckDB
-├── validate/         # Schema and quality validation
-├── export/           # Optional: export to PostgreSQL
-├── functions/        # Trigger logic (e.g., on new file)
-├── scripts/          # Automation scripts
-├── requirements.txt  # Python dependencies
-└── README.md         # You are here!
+├── data/                # Data storage layer (raw, processed, validated, warehouse)
+├── export/              # Optional: export to PostgreSQL
+├── extract/             # Data extraction logic
+├── functions/           # Trigger logic (e.g., on new file)
+├── initial_validation/  # Initial quality validation
+├── load/                # Load cleaned data into DuckDB
+├── scripts/             # Automation scripts
+├── transform/           # Data transformation using Apache Beam
+├── validate/            # Schema and quality validation
+├── README.md            # You are here!
+└── requirements.txt     # Python dependencies
 ```
 
 ---
