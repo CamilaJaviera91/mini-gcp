@@ -1,0 +1,97 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "5433:5432"
+    networks:
+      - airflow_network
+
+  airflow-init:
+    build: .
+  #  image: apache/airflow:2.9.1-python3.11
+    container_name: airflow-init
+    depends_on:
+      - postgres
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: ${AIRFLOW__DATABASE__SQL_ALCHEMY_CONN}
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+    volumes:
+      - ./dags:/opt/airflow/dags:z
+      - ./data:/opt/airflow/data:z
+      - ./export:/opt/airflow/export:z
+      - ./extract:/opt/airflow/extract:z
+      - ./functions:/opt/airflow/functions:z
+      - ./initial_validation:/opt/airflow/initial_validation:z
+      - ./load:/opt/airflow/load:z
+      - ./scripts:/opt/airflow/scripts:z
+      - ./transform:/opt/airflow/transform:z
+      - ./validate:/opt/airflow/validate:z
+    entrypoint: >
+      bash -c "airflow db init &&
+               airflow users create --username admin --password admin --firstname Camila --lastname Muñoz --role Admin --email camila@example.com"
+    networks:
+      - airflow_network
+
+  airflow-webserver:
+    build: .
+  #     dockerfile: Dockerfile.airflow
+  #  image: apache/airflow:2.9.1-python3.11
+    container_name: airflow-webserver
+    depends_on:
+      - postgres
+    ports:
+      - "8080:8080"
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: ${AIRFLOW__DATABASE__SQL_ALCHEMY_CONN}
+    volumes:
+      - ./dags:/opt/airflow/dags:z
+      - ./data:/opt/airflow/data:z
+      - ./export:/opt/airflow/export:z
+      - ./extract:/opt/airflow/extract:z
+      - ./functions:/opt/airflow/functions:z
+      - ./initial_validation:/opt/airflow/initial_validation:z
+      - ./load:/opt/airflow/load:z
+      - ./scripts:/opt/airflow/scripts:z
+      - ./transform:/opt/airflow/transform:z
+      - ./validate:/opt/airflow/validate:z
+    command: airflow webserver
+    networks:
+      - airflow_network
+
+  airflow-scheduler:
+    build: .
+  #     dockerfile: Dockerfile.airflow
+  #  image: apache/airflow:2.9.1-python3.11
+    container_name: airflow-scheduler
+    depends_on:
+      - airflow-webserver
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: ${AIRFLOW__DATABASE__SQL_ALCHEMY_CONN}
+    volumes:
+      - ./dags:/opt/airflow/dags:z
+      - ./data:/opt/airflow/data:z
+      - ./export:/opt/airflow/export:z
+      - ./extract:/opt/airflow/extract:z
+      - ./functions:/opt/airflow/functions:z
+      - ./initial_validation:/opt/airflow/initial_validation:z
+      - ./load:/opt/airflow/load:z
+      - ./scripts:/opt/airflow/scripts:z
+      - ./transform:/opt/airflow/transform:z
+      - ./validate:/opt/airflow/validate:z
+    command: airflow scheduler
+    networks:
+      - airflow_network
+
+volumes:
+  pgdata:
+
+networks:
+  airflow_network:
