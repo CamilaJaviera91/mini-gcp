@@ -1,19 +1,19 @@
 #!/bin/bash
-echo "🧹 Limpiando entorno completo..."
+echo "🧹 Cleaning up the entire environment..."
 docker compose down --volumes --remove-orphans
 
-echo "⏹️ Deteniendo servicios..."
+echo "⏹️ Stopping services..."
 docker volume prune -f
 docker container prune
 
-echo "🔧 Construyendo imágenes..."
+echo "🔧 Building images..."
 docker build --target default .
 
-echo "▶️ Levantando servicios..."
+echo "▶️ Starting services..."
 docker compose up -d
 
-echo "Servicios levantados"
+echo "Services started"
 docker ps
 
-# 1. Asegúrate de darles permisos: chmod +x 2_reset_docker.sh
-# 2. Ejecuta: ./2_reset_docker.sh
+# 1. Make sure to give it permissions: chmod +x 2_reset_docker.sh
+# 2. Run: ./2_reset_docker.sh
