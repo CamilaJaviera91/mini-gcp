@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "🚀 Inicializando Airflow..."
+echo "🚀 Initializing Airflow..."
 docker compose run --rm airflow-init
 
-# 1. Asegúrate de darles permisos: chmod +x 1_init.sh
-# 2. Ejecuta: ./1_init.sh
+# 1. Make sure to give it permissions: chmod +x 1_init.sh
+# 2. Run: ./1_init.sh
