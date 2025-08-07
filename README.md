@@ -20,6 +20,7 @@ This repo mimics a GCP-like modular pipeline (with stages like Cloud Functions, 
 
 ```
 .
+├── dags/                # Pipeline where we run all the tasks
 ├── data/                # Data storage layer (raw, processed, validated, warehouse)
 ├── export/              # Optional: export to PostgreSQL
 ├── extract/             # Data extraction logic
