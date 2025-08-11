@@ -8,6 +8,7 @@ import os
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from scripts.generate_fake_data import generate_sales_data as sales
+from export.export_to_postgres import export_duckdb_to_postgres as postgres
 
 default_args = {
     'owner': 'CamilaJaviera',
@@ -17,7 +18,7 @@ default_args = {
 }
 
 with DAG(
-    dag_id='dbt_postgres_setup',
+    dag_id='Mini_GCP',
     default_args=default_args,
     schedule_interval=None,
     catchup=False,
@@ -29,4 +30,9 @@ with DAG(
         python_callable=sales,
     )
 
-    task_sales 
+    task_postgres = PythonOperator(
+        task_id='export_duckdb_to_postgres',
+        python_callable=postgres,
+    )
+
+    task_sales >> task_postgres
