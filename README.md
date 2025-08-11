@@ -85,6 +85,16 @@ python3 -m venv .venv
 python -m venv .venv
 ```
 
+- This creates a .venv folder inside your project with an isolated Python environment.
+
+4. Activate the virtual environment:
+
+- On Linux/macOS:
+
+```
+source .venv/bin/activate
+```
+
 ---
 
 ## 🚧 Future Improvements
