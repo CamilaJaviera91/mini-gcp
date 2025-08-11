@@ -100,6 +100,15 @@ source .venv/bin/activate
 ```
 .venv\Scripts\Activate.ps1
 ```
+
+- After activation, your terminal prompt will show the environment name, e.g., (.venv).
+
+5. Install project dependencies inside the virtual environment:
+
+```
+pip install -r requirements.txt
+```
+
 ---
 
 ## 🚧 Future Improvements
