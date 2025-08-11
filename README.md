@@ -65,6 +65,15 @@ This repo mimics a GCP-like modular pipeline (with stages like Cloud Functions, 
 
 ## ✅ Requirements
 
+- Python 3.8+ (In this case we're usin 3.10)
+- VS Code (Visual Studio Code)
+- PostgreSQL
+- DuckDB
+- Apache Beam
+- Git
+- Docker
+- DBeaver
+
 ### 🐍 Creating a Python Virtual Environment in VS Code
 
 To keep dependencies isolated and avoid conflicts, it’s a good practice to use a virtual environment for this project. Here’s how you can set it up in VS Code:
