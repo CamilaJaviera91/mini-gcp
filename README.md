@@ -95,6 +95,11 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
+- On Windows (PowerShell):
+
+```
+.venv\Scripts\Activate.ps1
+```
 ---
 
 ## 🚧 Future Improvements
