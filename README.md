@@ -65,11 +65,12 @@ This repo mimics a GCP-like modular pipeline (with stages like Cloud Functions, 
 
 ## ✅ Requirements
 
-Install dependencies:
+### 🐍 Creating a Python Virtual Environment in VS Code
 
-```
-pip install -r requirements.txt
-```
+To keep dependencies isolated and avoid conflicts, it’s a good practice to use a virtual environment for this project. Here’s how you can set it up in VS Code:
+
+1. Open your project folder in VS Code.
+2. Open the integrated terminal (Ctrl + ) or via menu: Terminal > New Terminal.
 
 ---
 
