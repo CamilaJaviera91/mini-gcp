@@ -79,6 +79,12 @@ To keep dependencies isolated and avoid conflicts, it’s a good practice to use
 python3 -m venv .venv
 ```
 
+- On Windows (PowerShell):
+
+```
+python -m venv .venv
+```
+
 ---
 
 ## 🚧 Future Improvements
