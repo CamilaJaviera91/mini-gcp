@@ -7,13 +7,16 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
     ports:
-      - "5433:5432"
+      - "5432:5432"
     networks:
       - airflow_network
 
   airflow-init:
-    build: .
-  #  image: apache/airflow:2.9.1-python3.11
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: default
+    image: airflow-custom
     container_name: airflow-init
     depends_on:
       - postgres
@@ -39,9 +42,7 @@ services:
       - airflow_network
 
   airflow-webserver:
-    build: .
-  #     dockerfile: Dockerfile.airflow
-  #  image: apache/airflow:2.9.1-python3.11
+    image: airflow-custom  # usa la imagen ya buildiada
     container_name: airflow-webserver
     depends_on:
       - postgres
@@ -66,9 +67,7 @@ services:
       - airflow_network
 
   airflow-scheduler:
-    build: .
-  #     dockerfile: Dockerfile.airflow
-  #  image: apache/airflow:2.9.1-python3.11
+    image: airflow-custom 
     container_name: airflow-scheduler
     depends_on:
       - airflow-webserver
