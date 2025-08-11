@@ -109,6 +109,16 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+6. (Optional) Select the interpreter in VS Code:
+
+- Press `Ctrl + Shift + P` (or `Cmd + Shift + P` on macOS)
+
+- Type and select Python: Select Interpreter
+
+- Choose the interpreter from your `.venv` folder (it will show something like `.venv/bin/python` or `.venv\Scripts\python.exe`)
+
+Now VS Code will use the virtual environment’s Python for running and debugging.
+
 ---
 
 ## 🚧 Future Improvements
