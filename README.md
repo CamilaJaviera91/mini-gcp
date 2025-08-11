@@ -71,6 +71,13 @@ To keep dependencies isolated and avoid conflicts, it’s a good practice to use
 
 1. Open your project folder in VS Code.
 2. Open the integrated terminal (Ctrl + ) or via menu: Terminal > New Terminal.
+3. Create a virtual environment (only once):
+
+- On Linux/macOS:
+
+```
+python3 -m venv .venv
+```
 
 ---
 
