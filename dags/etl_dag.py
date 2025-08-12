@@ -9,6 +9,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from scripts.generate_fake_data import generate_sales_data as sales
 from export.export_to_postgres import export_duckdb_to_postgres as postgres
+from initial_validation.initial_validation import validate_sales_data as validate
 
 default_args = {
     'owner': 'CamilaJaviera',
@@ -25,14 +26,19 @@ with DAG(
     description='Pipeline'
 ) as dag:
 
-    task_sales = PythonOperator(
+    sales_task = PythonOperator(
         task_id='generate_sales_data',
         python_callable=sales,
     )
 
-    task_postgres = PythonOperator(
+    postgres_task = PythonOperator(
         task_id='export_duckdb_to_postgres',
         python_callable=postgres,
     )
 
-    task_sales >> task_postgres
+    validate_task = PythonOperator(
+        task_id="validate_sales_data",
+        python_callable=validate
+    )
+
+    sales_task >> postgres_task >> validate_task
