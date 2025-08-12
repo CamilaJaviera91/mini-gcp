@@ -10,6 +10,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from scripts.generate_fake_data import generate_sales_data as sales
 from export.export_to_postgres import export_duckdb_to_postgres as postgres
 from initial_validation.initial_validation import validate_sales_data as validate
+from transform.transform_data_beam import run as transform
 
 default_args = {
     'owner': 'CamilaJaviera',
@@ -41,4 +42,9 @@ with DAG(
         python_callable=validate
     )
 
-    sales_task >> postgres_task >> validate_task
+    transform_task = PythonOperator(
+        task_id="run",
+        python_callable=transform
+    )
+
+    sales_task >> postgres_task >> validate_task >> transform_task
