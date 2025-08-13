@@ -15,5 +15,5 @@ docker compose up -d
 echo "Services started"
 docker ps
 
-# 1. Make sure to give it permissions: chmod +x 2_reset_docker.sh
-# 2. Run: ./2_reset_docker.sh
+# 1. Make sure to give it permissions: chmod +x 3_reset_docker.sh
+# 2. Run: ./3_reset_docker.sh
