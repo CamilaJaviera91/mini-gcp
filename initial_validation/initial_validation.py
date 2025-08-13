@@ -5,7 +5,7 @@ import os
 import glob
 import numpy as np
 
-def validate_sales_data(input_pattern="data/extract/copy_raw_sales_*.csv",
+def initial_validation(input_pattern="data/extract/copy_raw_sales_*.csv",
                         output_dir="data/initial_validation"):
     """
     Validate sales data and save results as JSON and CSV.
