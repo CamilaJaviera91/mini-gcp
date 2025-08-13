@@ -198,6 +198,15 @@ Use this when:
 
 - You see permission denied errors when Airflow tries to read/write files.
 
+#### 💡 Tip:
+If you’re setting up the project for the first time, run the scripts in this order:
+
+1. `1_init.sh` → Initialize Airflow.
+
+2. `3_fix_permissions.sh` → Ensure correct file permissions.
+
+3. (Optional) `2_reset_docker.sh` if you need a clean rebuild later.
+
 ---
 
 ## 🚧 Future Improvements
