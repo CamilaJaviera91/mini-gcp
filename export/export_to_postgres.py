@@ -60,4 +60,4 @@ def export_to_postgres():
         print("✅ Exported DuckDB sales table to PostgreSQL")
 
 if __name__ == "__main__":
-    export_duckdb_to_postgres()
+    export_to_postgres()
