@@ -26,5 +26,5 @@ done
 
 echo "✅ Permissions successfully fixed for the airflow user."
 
-# 1. Make sure to give it permissions: chmod +x 3_fix_permissions.sh
-# 2. Run: ./3_fix_permissions.sh
+# 1. Make sure to give it permissions: chmod +x 2_fix_permissions.sh
+# 2. Run: ./2_fix_permissions.sh
