@@ -128,6 +128,10 @@ pip install -r requirements.txt
 
 Now VS Code will use the virtual environment’s Python for running and debugging.
 
+### ⚙️ Project Setup & Maintenance Scripts
+
+This project includes a set of helper scripts to simplify initial setup, resetting the environment, and fixing file permissions when working with Airflow and Docker locally.
+
 ---
 
 ## 🚧 Future Improvements
