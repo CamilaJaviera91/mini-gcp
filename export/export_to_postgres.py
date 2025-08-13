@@ -13,7 +13,7 @@ PG_USER = os.getenv("POSTGRES_USER")
 PG_PASSWORD = os.getenv("POSTGRES_PASSWORD")
 PG_SCHEMA = os.getenv("POSTGRES_SCHEMA")
 
-def export_duckdb_to_postgres():
+def export_to_postgres():
 
     con = duckdb.connect("data/warehouse/sales.duckdb")
     df = con.execute("SELECT * FROM sales").df()
