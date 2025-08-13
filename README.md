@@ -203,9 +203,9 @@ If you’re setting up the project for the first time, run the scripts in this o
 
 1. `1_init.sh` → Initialize Airflow.
 
-2. `3_fix_permissions.sh` → Ensure correct file permissions.
+2. `2_fix_permissions.sh` → Ensure correct file permissions.
 
-3. (Optional) `2_reset_docker.sh` if you need a clean rebuild later.
+3. (Optional) `3_reset_docker.sh` if you need a clean rebuild later.
 
 ---
 
