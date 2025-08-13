@@ -150,6 +150,28 @@ What it does:
 
 - Runs the `airflow-init` container to set up Airflow’s metadata database and initial configuration.
 
+2. `2_fix_permissions.sh` — Fix Project Folder Permissions
+This script adjusts file and folder permissions so that the Airflow user inside the container (UID `50000`) can access and modify project files without permission errors.
+
+Usage:
+
+```
+chmod +x 2_fix_permissions.sh
+./2_fix_permissions.sh
+```
+
+What it does:
+
+- Iterates over key project folders (`dags`, `data`, `extract`, `transform`, etc.).
+
+- Changes the owner to UID `50000` (Airflow user) and GID `0` (root group).
+
+Sets secure folder (755) and file (644) permissions.
+
+Use this when:
+
+- You see permission denied errors when Airflow tries to read/write files.
+
 2. `2_reset_docker.sh` — Reset Docker Environment
 This script completely cleans and rebuilds your local Docker setup for the project.
 
@@ -175,28 +197,6 @@ Use this when:
 - You want a fresh start.
 
 - There are issues with containers not working as expected.
-
-3. `3_fix_permissions.sh` — Fix Project Folder Permissions
-This script adjusts file and folder permissions so that the Airflow user inside the container (UID `50000`) can access and modify project files without permission errors.
-
-Usage:
-
-```
-chmod +x 3_fix_permissions.sh
-./3_fix_permissions.sh
-```
-
-What it does:
-
-- Iterates over key project folders (`dags`, `data`, `extract`, `transform`, etc.).
-
-- Changes the owner to UID `50000` (Airflow user) and GID `0` (root group).
-
-Sets secure folder (755) and file (644) permissions.
-
-Use this when:
-
-- You see permission denied errors when Airflow tries to read/write files.
 
 #### 💡 Tip:
 If you’re setting up the project for the first time, run the scripts in this order:
