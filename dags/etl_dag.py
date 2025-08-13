@@ -7,7 +7,7 @@ import os
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
-from scripts.generate_fake_data import generate_sales_data as sales
+from scripts.generate_fake_data import generate_fake_data as generate
 from export.export_to_postgres import export_duckdb_to_postgres as postgres
 from initial_validation.initial_validation import validate_sales_data as validate
 from transform.transform_data_beam import transform_data_beam as transform
@@ -28,9 +28,9 @@ with DAG(
     description='Pipeline'
 ) as dag:
 
-    sales_task = PythonOperator(
-        task_id='generate_sales_data',
-        python_callable=sales,
+    generate_task = PythonOperator(
+        task_id='generate_fake_data',
+        python_callable=generate,
     )
 
     postgres_task = PythonOperator(
@@ -53,4 +53,4 @@ with DAG(
         python_callable=load
     )
 
-    sales_task >> postgres_task >> validate_task >> transform_task >> load_task
+    generate_task >> postgres_task >> validate_task >> transform_task >> load_task
