@@ -186,6 +186,18 @@ chmod +x 3_fix_permissions.sh
 ./3_fix_permissions.sh
 ```
 
+What it does:
+
+- Iterates over key project folders (`dags`, `data`, `extract`, `transform`, etc.).
+
+- Changes the owner to UID `50000` (Airflow user) and GID `0` (root group).
+
+Sets secure folder (755) and file (644) permissions.
+
+Use this when:
+
+- You see permission denied errors when Airflow tries to read/write files.
+
 ---
 
 ## 🚧 Future Improvements
