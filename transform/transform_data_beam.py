@@ -18,6 +18,7 @@ def get_latest_input_file():
     if not files:
         raise FileNotFoundError("❌ No input CSV files found in 'data/extract/'")
 
+    # Extraer el número del archivo
     files_with_numbers = []
     for f in files:
         match = re.search(rf"{FILE_PREFIX}(\d+)\.csv", f)
@@ -79,7 +80,7 @@ class ToCSVLine(beam.DoFn):
     def process(self, record):
         yield f'{record["id"]},{record["customer"]},{record["product"]},{record["price"]},{record["sale_date"]}'
 
-def run():
+def transform_data_beam():
     try:
         input_file, output_file = get_latest_input_file()
     except Exception as e:
@@ -103,4 +104,4 @@ def run():
     print(f"✅ Clean file saved as: {output_file}")
 
 if __name__ == "__main__":
-    run()
+    transform_data_beam()
