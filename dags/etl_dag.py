@@ -9,10 +9,11 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from scripts.generate_fake_data import generate_fake_data as generate
 from extract.extract_from_local import extract_from_local as extract
-from initial_validation.initial_validation import initial_validation as ivalidate
+from initial_validation.initial_validation import initial_validation as ivalidation
 from transform.transform_data_beam import transform_data_beam as transform
 from load.load_to_duckdb import load_to_duckdb as load
 from export.export_to_postgres import export_to_postgres as export
+from final_validation.final_validation import final_validation as fvalidation
 
 default_args = {
     'owner': 'CamilaJaviera',
@@ -30,18 +31,18 @@ with DAG(
 ) as dag:
 
     generate_task = PythonOperator(
-        task_id='extract_from_local',
+        task_id='generate_fake_data',
         python_callable=generate,
     )
 
     extract_task = PythonOperator(
-        task_id='export_to_postgres',
+        task_id='extract_from_local',
         python_callable=extract,
     )
 
     first_validate_task = PythonOperator(
         task_id="initial_validation",
-        python_callable=ivalidate
+        python_callable=ivalidation
     )
 
     transform_task = PythonOperator(
@@ -55,8 +56,13 @@ with DAG(
     )
 
     export_task = PythonOperator(
-        task_id='export_to_postgres',
+        task_id='export_duckdb_to_postgres',
         python_callable=export,
     )
 
-    generate_task >> generate_task >> first_validate_task >> transform_task >> load_task >> export_task
+    second_validate_task = PythonOperator(
+        task_id="final_validation",
+        python_callable=fvalidation
+    )
+
+    generate_task >> extract_task >> first_validate_task >> transform_task >> load_task >> export_task >> second_validate_task
