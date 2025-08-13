@@ -146,9 +146,9 @@ chmod +x 1_init.sh
 
 What it does:
 
-Builds the `airflow-init` image without using Docker BuildKit (for better compatibility).
+- Builds the `airflow-init` image without using Docker BuildKit (for better compatibility).
 
-Runs the `airflow-init` container to set up Airflow’s metadata database and initial configuration.
+- Runs the `airflow-init` container to set up Airflow’s metadata database and initial configuration.
 
 2. `2_reset_docker.sh` — Reset Docker Environment
 This script completely cleans and rebuilds your local Docker setup for the project.
@@ -159,6 +159,22 @@ Usage:
 chmod +x 2_reset_docker.sh
 ./2_reset_docker.sh
 ```
+
+What it does:
+
+- Stops all running containers and removes volumes/orphan containers.
+
+- Prunes unused volumes and containers.
+
+- Rebuilds the project’s Docker image from scratch.
+
+- Starts services again with `docker compose up -d`.
+
+Use this when:
+
+- You want a fresh start.
+
+- There are issues with containers not working as expected.
 
 ---
 
