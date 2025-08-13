@@ -1,32 +1,36 @@
-dbt-core==1.7.0
-dbt-postgres==1.7.0
+dbt-core
+dbt-postgres
 dbt-bigquery
 
-apache-airflow==2.9.1
-apache-airflow-providers-openlineage==1.9.0
+apache-airflow
+apache-airflow-providers-openlineage
 
-protobuf<5
+protobuf
 
-psycopg2-binary==2.9.9
+psycopg2-binary
 
-python-dotenv==1.1.0
+python-dotenv
 
-faker==24.9.0
-duckdb==1.1.0
+faker
+duckdb
 
-pytest==8.2.1
-pytest-mock==3.14.0
+pytest
+pytest-mock
 
-black==24.4.2
-flake8==7.0.0
-isort==5.13.2
+black
+flake8
+isort
 
-numpy==1.24.4
-pandas==2.0.3
-matplotlib==3.8.4
+numpy
+pandas
+matplotlib
 
-gspread==5.12.0
-gspread-dataframe==3.3.0
-oauth2client==4.1.3
+gspread
+gspread-dataframe
+oauth2client
 
-sqlparse<0.5,>=0.2.3
+sqlparse
+
+apache-beam[gcp]
+redis
+requests
