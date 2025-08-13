@@ -8,10 +8,11 @@ import os
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from scripts.generate_fake_data import generate_fake_data as generate
-from export.export_to_postgres import export_to_postgres as export
+from extract.extract_from_local import extract_from_local as extract
 from initial_validation.initial_validation import initial_validation as ivalidate
 from transform.transform_data_beam import transform_data_beam as transform
 from load.load_to_duckdb import load_to_duckdb as load
+from export.export_to_postgres import export_to_postgres as export
 
 default_args = {
     'owner': 'CamilaJaviera',
@@ -29,13 +30,13 @@ with DAG(
 ) as dag:
 
     generate_task = PythonOperator(
-        task_id='generate_fake_data',
+        task_id='extract_from_local',
         python_callable=generate,
     )
 
-    export_task = PythonOperator(
+    extract_task = PythonOperator(
         task_id='export_to_postgres',
-        python_callable=export,
+        python_callable=extract,
     )
 
     first_validate_task = PythonOperator(
@@ -53,4 +54,9 @@ with DAG(
         python_callable=load
     )
 
-    generate_task >> export_task >> first_validate_task >> transform_task >> load_task
+    export_task = PythonOperator(
+        task_id='export_to_postgres',
+        python_callable=export,
+    )
+
+    generate_task >> generate_task >> first_validate_task >> transform_task >> load_task >> export_task
