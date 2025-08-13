@@ -150,7 +150,15 @@ Builds the `airflow-init` image without using Docker BuildKit (for better compat
 
 Runs the `airflow-init` container to set up Airflow’s metadata database and initial configuration.
 
+2. `2_reset_docker.sh` — Reset Docker Environment
+This script completely cleans and rebuilds your local Docker setup for the project.
 
+Usage:
+
+```
+chmod +x 2_reset_docker.sh
+./2_reset_docker.sh
+```
 
 ---
 
