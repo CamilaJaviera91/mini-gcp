@@ -8,7 +8,7 @@ import os
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from scripts.generate_fake_data import generate_fake_data as generate
-from export.export_to_postgres import export_duckdb_to_postgres as postgres
+from export.export_to_postgres import export_to_postgres as export
 from initial_validation.initial_validation import initial_validation as ivalidate
 from transform.transform_data_beam import transform_data_beam as transform
 from load.load_to_duckdb import load_to_duckdb as load
@@ -33,9 +33,9 @@ with DAG(
         python_callable=generate,
     )
 
-    postgres_task = PythonOperator(
-        task_id='export_duckdb_to_postgres',
-        python_callable=postgres,
+    export_task = PythonOperator(
+        task_id='export_to_postgres',
+        python_callable=export,
     )
 
     first_validate_task = PythonOperator(
