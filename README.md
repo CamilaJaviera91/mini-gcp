@@ -166,7 +166,7 @@ What it does:
 
 - Changes the owner to UID `50000` (Airflow user) and GID `0` (root group).
 
-Sets secure folder (755) and file (644) permissions.
+Sets secure folder (`755`) and file (`644`) permissions.
 
 Use this when:
 
