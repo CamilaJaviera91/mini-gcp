@@ -53,4 +53,4 @@ with DAG(
         python_callable=load
     )
 
-    generate_task >> postgres_task >> validate_task >> transform_task >> load_task
+    generate_task >> export_task >> first_validate_task >> transform_task >> load_task
