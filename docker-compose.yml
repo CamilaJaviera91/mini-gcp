@@ -34,7 +34,7 @@ services:
       - ./load:/opt/airflow/load:z
       - ./scripts:/opt/airflow/scripts:z
       - ./transform:/opt/airflow/transform:z
-      - ./validate:/opt/airflow/validate:z
+      - ./final_validation:/opt/airflow/final_validation:z
     entrypoint: >
       bash -c "airflow db init &&
                airflow users create --username admin --password admin --firstname Camila --lastname Muñoz --role Admin --email camila@example.com"
@@ -61,7 +61,7 @@ services:
       - ./load:/opt/airflow/load:z
       - ./scripts:/opt/airflow/scripts:z
       - ./transform:/opt/airflow/transform:z
-      - ./validate:/opt/airflow/validate:z
+      - ./final_validation:/opt/airflow/final_validation:z
     command: airflow webserver
     networks:
       - airflow_network
@@ -84,7 +84,7 @@ services:
       - ./load:/opt/airflow/load:z
       - ./scripts:/opt/airflow/scripts:z
       - ./transform:/opt/airflow/transform:z
-      - ./validate:/opt/airflow/validate:z
+      - ./final_validation:/opt/airflow/final_validation:z
     command: airflow scheduler
     networks:
       - airflow_network
