@@ -176,6 +176,16 @@ Use this when:
 
 - There are issues with containers not working as expected.
 
+3. `3_fix_permissions.sh` — Fix Project Folder Permissions
+This script adjusts file and folder permissions so that the Airflow user inside the container (UID `50000`) can access and modify project files without permission errors.
+
+Usage:
+
+```
+chmod +x 3_fix_permissions.sh
+./3_fix_permissions.sh
+```
+
 ---
 
 ## 🚧 Future Improvements
