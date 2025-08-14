@@ -1,36 +1,45 @@
-dbt-core
-dbt-postgres
-dbt-bigquery
+# Data Transformation/Modeling
+dbt-core                             # Core framework for transforming data in SQL.
+dbt-postgres                         # DBT adapter for PostgreSQL.
+dbt-bigquery                         # DBT adapter for BigQuery.
+sqlparse                             # Parses and formats SQL queries (used by DBT).
 
-apache-airflow
-apache-airflow-providers-openlineage
+# Orchestration/Workflow
+apache-airflow                       # Workflow orchestration and scheduling.
+apache-airflow-providers-openlineage # OpenLineage integration for tracking Airflow lineage.
 
-protobuf
+# Database Drivers/Connections
+psycopg2-binary                      # PostgreSQL driver.
+duckdb                               # DuckDB database engine.
 
-psycopg2-binary
+# Data Processing/Pipelines
+apache-beam[gcp]                     # Batch/stream data processing framework, GCP support.
+redis                                # In-memory data store (for caching or queues).
 
-python-dotenv
+# Data Analysis/Manipulation
+numpy                                # Numerical computations.
+pandas                               # DataFrames and manipulation.
+matplotlib                           # Data visualization.
 
-faker
-duckdb
+# Data Generation/Mocking
+faker                                # Generate synthetic data for testing.
+pytest                               # Testing framework.
+pytest-mock                          # Mocking for tests.
 
-pytest
-pytest-mock
+# API/HTTP/Automation
+requests                             # HTTP requests.
+gspread                              # Google Sheets API client.
+gspread-dataframe                    # Convert DataFrames to/from Google Sheets.
+oauth2client                         # Google OAuth2 authentication.
 
-black
-flake8
-isort
+# Environment/Config Management
+python-dotenv                        # Load environment variables from .env.
 
-numpy
-pandas
-matplotlib
+# Code Quality/Formatting
+black                                # Code formatter.
+flake8                               # Linter for style and errors.
+isort                                # Automatically sort imports.
 
-gspread
-gspread-dataframe
-oauth2client
-
-sqlparse
-
-apache-beam[gcp]
-redis
-requests
+# Utilities/System
+watchdog                             # Monitor file system changes.
+protobuf                             # Protocol buffers (used by some libraries like Beam or OpenLineage).
