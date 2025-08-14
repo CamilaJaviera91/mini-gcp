@@ -2,7 +2,12 @@ import os
 from sqlalchemy import create_engine, text
 from dotenv import load_dotenv
 import duckdb
-import pandas as pd
+import warnings
+
+def filter_collation_warning(message, category, filename, lineno, file=None, line=None):
+    return "collation" not in str(message)
+
+warnings.showwarning = filter_collation_warning
 
 load_dotenv()
 
@@ -15,7 +20,7 @@ PG_SCHEMA = os.getenv("POSTGRES_SCHEMA")
 
 def export_to_postgres():
 
-    con = duckdb.connect("data/warehouse/sales.duckdb")
+    con = duckdb.connect("data/load/sales.duckdb")
     df = con.execute("SELECT * FROM sales").df()
     con.close()
 
