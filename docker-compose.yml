@@ -24,6 +24,8 @@ services:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: ${AIRFLOW__DATABASE__SQL_ALCHEMY_CONN}
       AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+    env_file:
+      - .env
     volumes:
       - ./dags:/opt/airflow/dags:z
       - ./data:/opt/airflow/data:z
@@ -35,6 +37,7 @@ services:
       - ./scripts:/opt/airflow/scripts:z
       - ./transform:/opt/airflow/transform:z
       - ./final_validation:/opt/airflow/final_validation:z
+      - ./logs:/opt/airflow/logs:z
     entrypoint: >
       bash -c "airflow db init &&
                airflow users create --username admin --password admin --firstname Camila --lastname Muñoz --role Admin --email camila@example.com"
@@ -51,6 +54,8 @@ services:
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: ${AIRFLOW__DATABASE__SQL_ALCHEMY_CONN}
+    env_file:
+      - .env
     volumes:
       - ./dags:/opt/airflow/dags:z
       - ./data:/opt/airflow/data:z
@@ -62,6 +67,7 @@ services:
       - ./scripts:/opt/airflow/scripts:z
       - ./transform:/opt/airflow/transform:z
       - ./final_validation:/opt/airflow/final_validation:z
+      - ./logs:/opt/airflow/logs:z
     command: airflow webserver
     networks:
       - airflow_network
@@ -74,6 +80,8 @@ services:
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: ${AIRFLOW__DATABASE__SQL_ALCHEMY_CONN}
+    env_file:
+      - .env
     volumes:
       - ./dags:/opt/airflow/dags:z
       - ./data:/opt/airflow/data:z
@@ -85,6 +93,7 @@ services:
       - ./scripts:/opt/airflow/scripts:z
       - ./transform:/opt/airflow/transform:z
       - ./final_validation:/opt/airflow/final_validation:z
+      - ./logs:/opt/airflow/logs:z
     command: airflow scheduler
     networks:
       - airflow_network
