@@ -2,16 +2,16 @@ import duckdb
 import os
 import glob
 
-DUCKDB_DIR = "data/warehouse"
+DUCKDB_DIR = "data/load"
 os.makedirs(DUCKDB_DIR, exist_ok=True)
 
 def load_to_duckdb():
     db_path = os.path.join(DUCKDB_DIR, "sales.duckdb")
     con = duckdb.connect(db_path)
 
-    csv_files = sorted(glob.glob("data/processed/clean_sales_*.csv"))
+    csv_files = sorted(glob.glob("data/transform/clean_sales_*.csv"))
     if not csv_files:
-        print("❌ No hay archivos clean_sales_*.csv en data/processed/")
+        print("❌ There's no clean_sales_*.csv in data/transform/")
         return
 
     latest_file = csv_files[-1]
@@ -21,7 +21,7 @@ def load_to_duckdb():
         SELECT * FROM read_csv_auto('{latest_file}', header=True)
     """)
 
-    print(f"✅ Último archivo cargado: {latest_file}")
+    print(f"✅ Last load file: {latest_file}")
 
     df = con.execute("SELECT * FROM sales").df()
     
