@@ -6,7 +6,7 @@ import os
 import re
 
 INPUT_DIR = "data/extract"
-OUTPUT_DIR = "data/processed"
+OUTPUT_DIR = "data/transform"
 FILE_PREFIX = "copy_raw_sales_"
 OUTPUT_PREFIX = "clean_sales_"
 
