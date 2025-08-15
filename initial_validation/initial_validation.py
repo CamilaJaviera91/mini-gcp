@@ -6,7 +6,7 @@ import glob
 import numpy as np
 
 def initial_validation(input_pattern="data/extract/copy_raw_sales_*.csv",
-                        output_dir="data/initial_validation"):
+                        output_dir="data/ivalidation"):
     """
     Validate sales data and save results as JSON and CSV.
 
@@ -85,3 +85,6 @@ def _convert_to_serializable(obj):
         return {k: _convert_to_serializable(v) for k, v in obj.items()}
     else:
         return obj
+
+if __name__ == "__main__":
+    initial_validation()
