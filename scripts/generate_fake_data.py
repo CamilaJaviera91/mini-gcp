@@ -3,7 +3,7 @@ import random
 import os
 from faker import Faker
 
-def generate_fake_data(output_dir="data/raw", prefix="raw_sales_", num_records=5000, num_errors=250):
+def generate_fake_data(output_dir="data/generate", prefix="raw_sales_", num_records=5000, num_errors=250):
     fake = Faker("en_US")
     Faker.seed(42)
     random.seed(42)
@@ -46,3 +46,6 @@ def generate_fake_data(output_dir="data/raw", prefix="raw_sales_", num_records=5
 
     print(f"⚠️ Generated {output_file}")
     return output_file
+
+if __name__ == "__main__":
+    generate_fake_data()
