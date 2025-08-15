@@ -5,7 +5,7 @@ import os
 
 def final_validation():
     # Connect to DuckDB
-    con = duckdb.connect("data/warehouse/sales.duckdb")
+    con = duckdb.connect("data/load/sales.duckdb")
 
     # Fetch data
     df = con.execute("SELECT * FROM sales").fetchdf()
@@ -27,9 +27,12 @@ def final_validation():
         results["date_parsing_error"] = str(e)
 
     # Save reports
-    os.makedirs("data/validation", exist_ok=True)
-    with open("data/validation/validation_report.json", "w") as f:
+    os.makedirs("data/fvalidation", exist_ok=True)
+    with open("data/fvalidation/validation_report.json", "w") as f:
         json.dump(results, f, indent=4)
-    pd.DataFrame([results]).to_csv("data/validation/validation_report.csv", index=False)
+    pd.DataFrame([results]).to_csv("data/fvalidation/validation_report.csv", index=False)
 
     print("✅ Validation report saved!")
+
+if __name__ == "__main__":
+    final_validation()
