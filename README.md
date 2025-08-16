@@ -27,6 +27,7 @@ This repo mimics a GCP-like modular pipeline (with stages like Cloud Functions, 
 ├── functions/           # Trigger logic (e.g., on new file)
 ├── initial_validation/  # Initial quality validation
 ├── load/                # Load cleaned data into DuckDB
+├── logs/                # Log the pipeline
 ├── scripts/             # Automation scripts
 ├── transform/           # Data transformation using Apache Beam
 ├── validate/            # Schema and quality validation
