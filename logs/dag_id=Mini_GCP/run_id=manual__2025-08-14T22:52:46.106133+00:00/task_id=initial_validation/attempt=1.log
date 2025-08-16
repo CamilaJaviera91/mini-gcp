@@ -1,0 +1,21 @@
+[2025-08-14T22:52:51.371+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-08-14T22:52:51.389+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Mini_GCP.initial_validation manual__2025-08-14T22:52:46.106133+00:00 [queued]>
+[2025-08-14T22:52:51.394+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Mini_GCP.initial_validation manual__2025-08-14T22:52:46.106133+00:00 [queued]>
+[2025-08-14T22:52:51.394+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-08-14T22:52:51.401+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): initial_validation> on 2025-08-14 22:52:46.106133+00:00
+[2025-08-14T22:52:51.409+0000] {standard_task_runner.py:63} INFO - Started process 186 to run task
+[2025-08-14T22:52:51.412+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'Mini_GCP', 'initial_validation', 'manual__2025-08-14T22:52:46.106133+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmp4bz69138']
+[2025-08-14T22:52:51.414+0000] {standard_task_runner.py:91} INFO - Job 4: Subtask initial_validation
+[2025-08-14T22:52:51.449+0000] {task_command.py:426} INFO - Running <TaskInstance: Mini_GCP.initial_validation manual__2025-08-14T22:52:46.106133+00:00 [running]> on host 00a680a0d1f5
+[2025-08-14T22:52:51.508+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='CamilaJaviera' AIRFLOW_CTX_DAG_ID='Mini_GCP' AIRFLOW_CTX_TASK_ID='initial_validation' AIRFLOW_CTX_EXECUTION_DATE='2025-08-14T22:52:46.106133+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-08-14T22:52:46.106133+00:00'
+[2025-08-14T22:52:51.509+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-08-14T22:52:51.517+0000] {logging_mixin.py:188} INFO - 📄 Initial Validation: data/extract/copy_raw_sales_1.csv
+[2025-08-14T22:52:51.537+0000] {logging_mixin.py:188} INFO - ✅ Report saved to:
+[2025-08-14T22:52:51.537+0000] {logging_mixin.py:188} INFO -  - data/ivalidation/initial_validation.json
+[2025-08-14T22:52:51.538+0000] {logging_mixin.py:188} INFO -  - data/ivalidation/initial_validation.csv
+[2025-08-14T22:52:51.538+0000] {python.py:237} INFO - Done. Returned value was: {'total_rows': 5000, 'nulls_per_column': {'id': 0, 'customer': 60, 'product': 0, 'price': 0, 'sale_date': 72}, 'missing_customers': 60, 'invalid_prices': 58, 'invalid_dates': 72, 'min_date': '2023-08-14', 'max_date': '2025-08-13', 'invalid_products': 60, 'total_issues': 250}
+[2025-08-14T22:52:51.538+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-08-14T22:52:51.555+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Mini_GCP, task_id=initial_validation, run_id=manual__2025-08-14T22:52:46.106133+00:00, execution_date=20250814T225246, start_date=20250814T225251, end_date=20250814T225251
+[2025-08-14T22:52:51.584+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-08-14T22:52:51.603+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-08-14T22:52:51.604+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

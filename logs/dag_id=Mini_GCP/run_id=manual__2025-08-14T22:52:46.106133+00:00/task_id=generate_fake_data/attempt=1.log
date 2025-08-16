@@ -1,0 +1,18 @@
+[2025-08-14T22:52:47.455+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-08-14T22:52:47.475+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Mini_GCP.generate_fake_data manual__2025-08-14T22:52:46.106133+00:00 [queued]>
+[2025-08-14T22:52:47.480+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Mini_GCP.generate_fake_data manual__2025-08-14T22:52:46.106133+00:00 [queued]>
+[2025-08-14T22:52:47.480+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-08-14T22:52:47.488+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_fake_data> on 2025-08-14 22:52:46.106133+00:00
+[2025-08-14T22:52:47.496+0000] {standard_task_runner.py:63} INFO - Started process 178 to run task
+[2025-08-14T22:52:47.499+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'Mini_GCP', 'generate_fake_data', 'manual__2025-08-14T22:52:46.106133+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpaprizjgv']
+[2025-08-14T22:52:47.500+0000] {standard_task_runner.py:91} INFO - Job 2: Subtask generate_fake_data
+[2025-08-14T22:52:47.535+0000] {task_command.py:426} INFO - Running <TaskInstance: Mini_GCP.generate_fake_data manual__2025-08-14T22:52:46.106133+00:00 [running]> on host 00a680a0d1f5
+[2025-08-14T22:52:47.592+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='CamilaJaviera' AIRFLOW_CTX_DAG_ID='Mini_GCP' AIRFLOW_CTX_TASK_ID='generate_fake_data' AIRFLOW_CTX_EXECUTION_DATE='2025-08-14T22:52:46.106133+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-08-14T22:52:46.106133+00:00'
+[2025-08-14T22:52:47.593+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-08-14T22:52:48.177+0000] {logging_mixin.py:188} INFO - ⚠️ Generated data/generate/raw_sales_1.csv
+[2025-08-14T22:52:48.177+0000] {python.py:237} INFO - Done. Returned value was: data/generate/raw_sales_1.csv
+[2025-08-14T22:52:48.177+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-08-14T22:52:48.194+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Mini_GCP, task_id=generate_fake_data, run_id=manual__2025-08-14T22:52:46.106133+00:00, execution_date=20250814T225246, start_date=20250814T225247, end_date=20250814T225248
+[2025-08-14T22:52:48.232+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-08-14T22:52:48.251+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-08-14T22:52:48.253+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
