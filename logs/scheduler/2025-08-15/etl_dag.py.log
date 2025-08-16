@@ -1,0 +1,217 @@
+[2025-08-15T00:00:30.153+0000] {processor.py:161} INFO - Started process (PID=854) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:00:30.154+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:00:30.155+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:00:30.155+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:00:31.016+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:00:31.032+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:00:31.031+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:00:31.039+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:00:31.039+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:00:31.048+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.899 seconds
+[2025-08-15T00:01:01.171+0000] {processor.py:161} INFO - Started process (PID=861) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:01:01.171+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:01:01.173+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:01:01.172+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:01:02.012+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:01:02.029+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:01:02.029+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:01:02.035+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:01:02.035+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:01:02.045+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.879 seconds
+[2025-08-15T00:01:32.170+0000] {processor.py:161} INFO - Started process (PID=868) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:01:32.170+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:01:32.172+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:01:32.172+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:01:33.015+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:01:33.032+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:01:33.032+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:01:33.038+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:01:33.038+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:01:33.048+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.883 seconds
+[2025-08-15T00:02:03.160+0000] {processor.py:161} INFO - Started process (PID=875) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:02:03.161+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:02:03.162+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:02:03.162+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:02:04.020+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:02:04.037+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:02:04.036+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:02:04.043+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:02:04.043+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:02:04.053+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.897 seconds
+[2025-08-15T00:02:34.175+0000] {processor.py:161} INFO - Started process (PID=882) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:02:34.176+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:02:34.177+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:02:34.177+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:02:35.074+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:02:35.091+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:02:35.091+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:02:35.098+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:02:35.098+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:02:35.109+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.938 seconds
+[2025-08-15T00:03:05.226+0000] {processor.py:161} INFO - Started process (PID=889) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:03:05.227+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:03:05.228+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:03:05.228+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:03:06.113+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:03:06.133+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:03:06.132+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:03:06.142+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:03:06.142+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:03:06.152+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.932 seconds
+[2025-08-15T00:03:36.264+0000] {processor.py:161} INFO - Started process (PID=896) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:03:36.265+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:03:36.267+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:03:36.266+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:03:37.219+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:03:37.237+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:03:37.237+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:03:37.245+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:03:37.245+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:03:37.255+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.996 seconds
+[2025-08-15T00:04:07.365+0000] {processor.py:161} INFO - Started process (PID=903) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:04:07.367+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:04:07.368+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:04:07.368+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:04:08.236+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:04:08.254+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:04:08.253+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:04:08.260+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:04:08.260+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:04:08.270+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.909 seconds
+[2025-08-15T00:04:38.394+0000] {processor.py:161} INFO - Started process (PID=910) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:04:38.396+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:04:38.397+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:04:38.397+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:04:39.252+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:04:39.268+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:04:39.268+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:04:39.274+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:04:39.274+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:04:39.283+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.893 seconds
+[2025-08-15T00:05:09.414+0000] {processor.py:161} INFO - Started process (PID=917) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:05:09.416+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:05:09.417+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:05:09.416+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:05:10.269+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:05:10.285+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:05:10.285+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:05:10.292+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:05:10.292+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:05:10.302+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.892 seconds
+[2025-08-15T00:05:40.427+0000] {processor.py:161} INFO - Started process (PID=924) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:05:40.428+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:05:40.429+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:05:40.429+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:05:41.334+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:05:41.351+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:05:41.350+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:05:41.357+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:05:41.357+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:05:41.368+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.946 seconds
+[2025-08-15T00:06:11.494+0000] {processor.py:161} INFO - Started process (PID=931) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:06:11.495+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:06:11.496+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:06:11.496+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:06:12.352+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:06:12.368+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:06:12.368+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:06:12.376+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:06:12.375+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:06:12.386+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.897 seconds
+[2025-08-15T00:06:42.503+0000] {processor.py:161} INFO - Started process (PID=938) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:06:42.503+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:06:42.505+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:06:42.504+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:06:43.375+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:06:43.392+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:06:43.392+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:06:43.399+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:06:43.399+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:06:43.407+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.910 seconds
+[2025-08-15T00:07:13.528+0000] {processor.py:161} INFO - Started process (PID=945) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:07:13.530+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:07:13.531+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:07:13.531+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:07:14.450+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:07:14.469+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:07:14.468+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:07:14.476+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:07:14.476+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:07:14.486+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.962 seconds
+[2025-08-15T00:07:44.605+0000] {processor.py:161} INFO - Started process (PID=952) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:07:44.606+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:07:44.607+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:07:44.607+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:07:45.478+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:07:45.496+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:07:45.496+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:07:45.503+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:07:45.503+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:07:45.512+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.911 seconds
+[2025-08-15T00:08:15.632+0000] {processor.py:161} INFO - Started process (PID=959) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:08:15.634+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:08:15.635+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:08:15.635+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:08:16.488+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:08:16.504+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:08:16.504+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:08:16.510+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:08:16.510+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:08:16.519+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.891 seconds
+[2025-08-15T00:08:46.635+0000] {processor.py:161} INFO - Started process (PID=966) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:08:46.636+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:08:46.637+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:08:46.637+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:08:47.474+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:08:47.490+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:08:47.490+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:08:47.497+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:08:47.497+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:08:47.508+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.878 seconds
+[2025-08-15T00:09:17.627+0000] {processor.py:161} INFO - Started process (PID=973) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:09:17.628+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:09:17.630+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:09:17.629+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:09:18.507+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:09:18.524+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:09:18.523+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:09:18.531+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:09:18.531+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:09:18.540+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.918 seconds
+[2025-08-15T00:09:48.659+0000] {processor.py:161} INFO - Started process (PID=980) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:09:48.659+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:09:48.660+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:09:48.660+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:09:49.528+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:09:49.545+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:09:49.544+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:09:49.551+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:09:49.551+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:09:49.561+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.907 seconds
+[2025-08-15T00:10:19.678+0000] {processor.py:161} INFO - Started process (PID=987) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:10:19.680+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:10:19.681+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:10:19.681+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:10:20.520+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:10:20.536+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:10:20.536+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:10:20.542+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:10:20.542+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:10:20.552+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.879 seconds
+[2025-08-15T00:10:50.661+0000] {processor.py:161} INFO - Started process (PID=994) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:10:50.662+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:10:50.664+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:10:50.664+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:10:51.528+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:10:51.544+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:10:51.544+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:10:51.550+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:10:51.550+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:10:51.560+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.903 seconds
+[2025-08-15T00:11:21.605+0000] {processor.py:161} INFO - Started process (PID=1001) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:11:21.607+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:11:21.608+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:11:21.608+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:11:22.505+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:11:22.522+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:11:22.522+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:11:22.529+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:11:22.529+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:11:22.538+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.938 seconds
+[2025-08-15T00:11:52.669+0000] {processor.py:161} INFO - Started process (PID=1008) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:11:52.670+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:11:52.671+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:11:52.671+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:11:53.531+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:11:53.547+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:11:53.547+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:11:53.554+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:11:53.554+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:11:53.563+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.898 seconds
+[2025-08-15T00:12:23.695+0000] {processor.py:161} INFO - Started process (PID=1015) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:12:23.696+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:12:23.697+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:12:23.697+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:12:24.606+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:12:24.628+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:12:24.628+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:12:24.636+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:12:24.636+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:12:24.649+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.960 seconds
+[2025-08-15T00:12:54.785+0000] {processor.py:161} INFO - Started process (PID=1022) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:12:54.786+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:12:54.788+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:12:54.788+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:12:55.750+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:12:55.769+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:12:55.768+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:12:55.775+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:12:55.775+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:12:55.783+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.005 seconds
+[2025-08-15T00:13:25.901+0000] {processor.py:161} INFO - Started process (PID=1029) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:13:25.903+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:13:25.904+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:13:25.904+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:13:26.749+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:13:26.765+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:13:26.765+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:13:26.772+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:13:26.772+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:13:26.782+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.885 seconds
+[2025-08-15T00:13:56.916+0000] {processor.py:161} INFO - Started process (PID=1036) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:13:56.917+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:13:56.918+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:13:56.918+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:13:57.760+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:13:57.777+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:13:57.777+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:13:57.783+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:13:57.783+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:13:57.793+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.882 seconds
+[2025-08-15T00:14:27.920+0000] {processor.py:161} INFO - Started process (PID=1043) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:14:27.922+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:14:27.924+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:14:27.924+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:14:28.766+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:14:28.783+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:14:28.782+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:14:28.790+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:14:28.790+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:14:28.799+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.884 seconds
+[2025-08-15T00:14:58.933+0000] {processor.py:161} INFO - Started process (PID=1050) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:14:58.935+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:14:58.936+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:14:58.936+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:14:59.782+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:14:59.798+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:14:59.797+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:14:59.805+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:14:59.805+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:14:59.814+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.886 seconds
+[2025-08-15T00:15:29.936+0000] {processor.py:161} INFO - Started process (PID=1057) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:15:29.938+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:15:29.939+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:15:29.939+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:15:30.781+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:15:30.799+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:15:30.798+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:15:30.805+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:15:30.805+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:15:30.815+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.884 seconds
+[2025-08-15T00:16:00.933+0000] {processor.py:161} INFO - Started process (PID=1064) to work on /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:16:00.934+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2025-08-15T00:16:00.935+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:16:00.935+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:16:01.781+0000] {processor.py:840} INFO - DAG(s) 'Mini_GCP' retrieved from /opt/airflow/dags/etl_dag.py
+[2025-08-15T00:16:01.798+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:16:01.798+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-08-15T00:16:01.804+0000] {logging_mixin.py:188} INFO - [2025-08-15T00:16:01.804+0000] {dag.py:3954} INFO - Setting next_dagrun for Mini_GCP to None, run_after=None
+[2025-08-15T00:16:01.814+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.886 seconds
