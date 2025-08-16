@@ -11,7 +11,7 @@ warnings.showwarning = filter_collation_warning
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
-SOURCE_DIR = "data/raw"
+SOURCE_DIR = "data/generate"
 DEST_DIR = "data/extract"
 FILENAME_PREFIX = "raw_sales_"
 COPY_PREFIX = "copy_raw_sales_"
