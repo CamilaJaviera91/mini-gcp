@@ -12,8 +12,9 @@ from extract.extract_from_local import extract_from_local as extract
 from initial_validation.initial_validation import initial_validation as ivalidation
 from transform.transform_data_beam import transform_data_beam as transform
 from load.load_to_duckdb import load_to_duckdb as load
-from export.export_to_postgres import export_to_postgres as export
+from export.export_to_postgres import export_to_postgres as exportpg
 from final_validation.final_validation import final_validation as fvalidation
+from export.export_to_bigquery import export_to_bigquery as exportbq
 
 default_args = {
     'owner': 'CamilaJaviera',
@@ -55,9 +56,9 @@ with DAG(
         python_callable=load
     )
 
-    export_task = PythonOperator(
-        task_id='export_duckdb_to_postgres',
-        python_callable=export,
+    exportpg_task = PythonOperator(
+        task_id='export_to_postgres',
+        python_callable=exportpg,
     )
 
     second_validate_task = PythonOperator(
@@ -65,4 +66,9 @@ with DAG(
         python_callable=fvalidation
     )
 
-    generate_task >> extract_task >> first_validate_task >> transform_task >> load_task >> export_task >> second_validate_task
+    exportbq_task = PythonOperator(
+        task_id='export_to_bigquery',
+        python_callable=exportbq,
+    )
+
+    generate_task >> extract_task >> first_validate_task >> transform_task >> load_task >> exportpg_task >> second_validate_task >> exportbq_task
