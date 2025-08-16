@@ -9,7 +9,7 @@ subprocess.run(["python", "scripts/generate_fake_data.py"])
 
 time.sleep(2)
 
-subprocess.run(["python", "export/export_to_postgres_local.py"])
+subprocess.run(["python", "extract/extract_from_local.py"])
 
 time.sleep(2)
 
