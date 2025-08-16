@@ -45,7 +45,7 @@ services:
       - airflow_network
 
   airflow-webserver:
-    image: airflow-custom  # usa la imagen ya buildiada
+    image: airflow-custom
     container_name: airflow-webserver
     depends_on:
       - postgres
