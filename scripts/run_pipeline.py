@@ -25,11 +25,15 @@ subprocess.run(["python", "load/load_to_duckdb.py"])
 
 time.sleep(2)
 
-subprocess.run(["python", "export/export_to_postgres.py"])
+subprocess.run(["python", "export/export_to_postgres_local.py"])
 
 time.sleep(2)
 
 subprocess.run(["python", "validate/validate_data.py"])
+
+time.sleep(2)
+
+subprocess.run(["python", "export/export_to_bigquery.py"])
 
 try:
     print("Pipeline running. Press Ctrl+C to stop.")
