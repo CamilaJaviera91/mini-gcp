@@ -231,6 +231,19 @@ If you’re setting up the project for the first time, run the scripts in this o
 
 ---
 
+## ⚙️ Environment & Docker Notes  
+
+💡 **Important:**  
+Every time you add a new variable in the `.env` file or edit the `docker-compose.yml` file, you need to **restart Docker** using the script:  
+
+```
+./3_reset_docker.sh
+```
+
+- This script stops and removes running containers, rebuilds the images, and restarts everything from scratch.
+
+---
+
 ## 🚧 Future Improvements
 
 - [X] Add Airflow DAG for orchestration
