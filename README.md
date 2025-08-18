@@ -74,7 +74,7 @@ raw data → extract → initial_validation → transform → load → final_val
 
 ## ⚙️ Tools & Libraries
 
-- 🐍 Python
+- 🐍 [Python](https://www.python.org/)
 - 🦆 [DuckDB](https://duckdb.org/)
 - ⚙️ [Apache Beam](https://beam.apache.org/)
 - ⚙️ [Apache Airflow](https://airflow.apache.org/)
