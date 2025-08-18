@@ -27,6 +27,14 @@ cd mini-gcp
 
 ---
 
+## 🔄 Pipeline Flow
+
+```
+raw data → extract → initial_validation → transform → load → final_validation → warehouse
+```
+
+---
+
 ## 📁 Project Structure
 
 ```
