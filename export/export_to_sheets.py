@@ -15,12 +15,10 @@ def export_to_sheets():
     if not BQ_CREDENTIALS or not os.path.exists(BQ_CREDENTIALS):
         raise ValueError("❌ GOOGLE_CREDENTIALS_PATH is missing or invalid.")
 
-    # Query DuckDB
     con = duckdb.connect(DUCKDB_PATH)
     df = con.execute("SELECT * FROM sales").df()
     con.close()
 
-    # Google Sheets authentication
     scope = [
         "https://www.googleapis.com/auth/spreadsheets",
         "https://www.googleapis.com/auth/drive"
