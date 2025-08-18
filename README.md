@@ -223,11 +223,11 @@ Use this when:
 #### 💡 Tip:
 If you’re setting up the project for the first time, run the scripts in this order:
 
-1. `1_init.sh` → Initialize Airflow.
+1. `1_init.sh` → ✈️ Initialize Airflow.
 
-2. `2_fix_permissions.sh` → Ensure correct file permissions.
+2. `2_fix_permissions.sh` → 🔐 Ensure correct file permissions.
 
-3. (Optional) `3_reset_docker.sh` if you need a clean rebuild later.
+3. (Optional) `3_reset_docker.sh` 🔄🐳 if you need a clean rebuild later.
 
 ---
 
