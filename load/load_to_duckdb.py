@@ -14,18 +14,28 @@ def load_to_duckdb():
         print("❌ There's no clean_sales_*.csv in data/transform/")
         return
 
-    latest_file = csv_files[-1]
-
-    con.execute(f"""
-        CREATE OR REPLACE TABLE sales AS
-        SELECT * FROM read_csv_auto('{latest_file}', header=True)
+    con.execute("""
+        CREATE TABLE IF NOT EXISTS sales AS
+        SELECT * FROM read_csv_auto('data/transform/clean_sales_1.csv', header=True)
+        LIMIT 0
     """)
 
-    print(f"✅ Last load file: {latest_file}")
+    for file in csv_files:
+        print(f"📥 Loading {file} into DuckDB...")
+        con.execute(f"""
+            INSERT INTO sales
+            SELECT DISTINCT * FROM read_csv_auto('{file}', header=True)
+        """)
 
-    df = con.execute("SELECT * FROM sales").df()
-    
-    print(df.head())
+    con.execute("""
+        CREATE OR REPLACE TABLE sales AS
+        SELECT DISTINCT * FROM sales
+    """)
+
+    print("✅ All CSVs loaded into DuckDB (deduplicated)")
+
+    df = con.execute("SELECT COUNT(*) as total_rows FROM sales").df()
+    print(df)
 
     con.close()
 
