@@ -4,13 +4,10 @@ import json
 import os
 
 def final_validation():
-    # Connect to DuckDB
     con = duckdb.connect("data/load/sales.duckdb")
 
-    # Fetch data
     df = con.execute("SELECT * FROM sales").fetchdf()
 
-    # Validation logic
     results = {}
     results["total_rows"] = len(df)
     results["nulls_per_column"] = df.isnull().sum().to_dict()
@@ -26,7 +23,6 @@ def final_validation():
     except Exception as e:
         results["date_parsing_error"] = str(e)
 
-    # Save reports
     os.makedirs("data/fvalidation", exist_ok=True)
     with open("data/fvalidation/validation_report.json", "w") as f:
         json.dump(results, f, indent=4)
