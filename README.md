@@ -216,9 +216,9 @@ What it does:
 
 Use this when:
 
-- You want a fresh start.
+- 🌱 You want a fresh start.
 
-- There are issues with containers not working as expected.
+- ⚠️ There are issues with containers not working as expected.
 
 #### 💡 Tip:
 If you’re setting up the project for the first time, run the scripts in this order:
