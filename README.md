@@ -248,6 +248,17 @@ Feel free to open an issue or submit a PR!
 
 ---
 
+## 🤝 Contributing
+
+1. Fork the repo and create your branch:
+```
+git checkout -b feature/my-feature
+```
+2.Run tests and format code before pushing.
+3. Submit a Pull Request 🚀.
+
+---
+
 ## 👩‍💻 Author
 Camila Muñoz – @CamilaJaviera91
 💬 Happy to connect and discuss data pipelines or open source!
