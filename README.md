@@ -241,6 +241,12 @@ If you’re setting up the project for the first time, run the scripts in this o
 
 ---
 
+## 📊 LookerStudio
+
+- [Dashboard](https://lookerstudio.google.com/u/0/reporting/1ebab84e-02b6-4370-9691-83375c31a4cd/page/tEnnC)
+
+---
+
 ## 📬 Feedback or Questions?
 
 Feel free to open an issue or submit a PR!
