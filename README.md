@@ -156,7 +156,7 @@ Now VS Code will use the virtual environment’s Python for running and debuggin
 
 This project includes a set of helper scripts to simplify initial setup, resetting the environment, and fixing file permissions when working with Airflow and Docker locally.
 
-1. `1_init.sh` — Initialize Airflow
+1. `1_init.sh` — Initialize Airflow ✈️
 This script builds the Airflow images and runs the Airflow initialization process inside Docker.
 
 Usage:
@@ -168,9 +168,9 @@ chmod +x 1_init.sh
 
 What it does:
 
-- Builds the `airflow-init` image without using Docker BuildKit (for better compatibility).
+- 🏗️ Builds the `airflow-init` image without using Docker BuildKit (for better compatibility).
 
-- Runs the `airflow-init` container to set up Airflow’s metadata database and initial configuration.
+- 🗄️ Runs the `airflow-init` container to set up Airflow’s metadata database and initial configuration.
 
 2. `2_fix_permissions.sh` — Fix Project Folder Permissions
 This script adjusts file and folder permissions so that the Airflow user inside the container (UID `50000`) can access and modify project files without permission errors.
