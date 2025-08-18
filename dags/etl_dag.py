@@ -15,6 +15,7 @@ from load.load_to_duckdb import load_to_duckdb as load
 from export.export_to_postgres import export_to_postgres as exportpg
 from final_validation.final_validation import final_validation as fvalidation
 from export.export_to_bigquery import export_to_bigquery as exportbq
+from export.export_to_sheets import export_to_sheets as exportsh
 
 default_args = {
     'owner': 'CamilaJaviera',
@@ -71,4 +72,9 @@ with DAG(
         python_callable=exportbq,
     )
 
-    generate_task >> extract_task >> first_validate_task >> transform_task >> load_task >> exportpg_task >> second_validate_task >> exportbq_task
+    exportsh_task = PythonOperator(
+        task_id='export_to_sheets',
+        python_callable=exportsh,
+    )
+
+    generate_task >> extract_task >> first_validate_task >> transform_task >> load_task >> exportpg_task >> second_validate_task >> exportbq_task >> exportsh_task
