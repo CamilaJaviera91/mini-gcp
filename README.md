@@ -220,7 +220,6 @@ Use this when:
 
 - ⚠️ There are issues with containers not working as expected.
 
-
 #### 💡 Tip:
 If you’re setting up the project for the first time, run the scripts in this order:
 
