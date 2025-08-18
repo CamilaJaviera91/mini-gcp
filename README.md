@@ -192,7 +192,7 @@ What it does:
 
 Use this when:
 
-- You see permission denied errors when Airflow tries to read/write files.
+- ⚠️ You see permission denied errors when Airflow tries to read/write files.
 
 3. `3_reset_docker.sh` — Reset Docker Environment
 This script completely cleans and rebuilds your local Docker setup for the project.
