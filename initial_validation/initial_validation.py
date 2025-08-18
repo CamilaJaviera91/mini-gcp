@@ -7,14 +7,6 @@ import numpy as np
 
 def initial_validation(input_pattern="data/extract/copy_raw_sales_*.csv",
                         output_dir="data/ivalidation"):
-    """
-    Validate sales data and save results as JSON and CSV.
-
-    Args:
-        input_pattern (str): Glob pattern to find the sales CSV files.
-        output_dir (str): Directory to store the validation reports.
-    """
-    # Find latest file
     csv_files = sorted(glob.glob(input_pattern))
     if not csv_files:
         raise FileNotFoundError(f"❌ No se encontraron archivos con patrón '{input_pattern}'")
@@ -28,10 +20,8 @@ def initial_validation(input_pattern="data/extract/copy_raw_sales_*.csv",
     # Run validation
     report = _validate_data(df)
 
-    # Ensure JSON-serializable values
     serializable_report = _convert_to_serializable(report)
 
-    # Save results
     os.makedirs(output_dir, exist_ok=True)
     json_path = os.path.join(output_dir, "initial_validation.json")
     csv_path = os.path.join(output_dir, "initial_validation.csv")
@@ -45,10 +35,9 @@ def initial_validation(input_pattern="data/extract/copy_raw_sales_*.csv",
     print(f" - {json_path}")
     print(f" - {csv_path}")
 
-    return serializable_report  # Can be used in XCom
+    return serializable_report
 
 def _validate_data(df: pd.DataFrame):
-    """Perform validation checks on the sales DataFrame."""
     results = {}
     results["total_rows"] = len(df)
     results["nulls_per_column"] = df.isnull().sum().to_dict()
@@ -78,7 +67,6 @@ def _validate_data(df: pd.DataFrame):
     return results
 
 def _convert_to_serializable(obj):
-    """Convert NumPy and non-serializable objects to Python native types."""
     if isinstance(obj, (np.integer, np.floating)):
         return obj.item()
     elif isinstance(obj, dict):
