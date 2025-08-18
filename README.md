@@ -16,6 +16,17 @@ This repo mimics a GCP-like modular pipeline (with stages like Cloud Functions, 
 
 ---
 
+## ⚡ Quickstart
+
+- Clone the repository and set up the environment:
+
+```
+git clone https://github.com/your-repo/mini-gcp.git
+cd mini-gcp
+```
+
+---
+
 ## 📁 Project Structure
 
 ```
