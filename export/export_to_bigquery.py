@@ -4,7 +4,6 @@ from sqlalchemy import create_engine, inspect
 from google.cloud import bigquery
 
 def export_to_bigquery():
-    # PostgreSQL connection
 
     PG_HOST = os.getenv("POSTGRES_HOST")
     PG_PORT = os.getenv("POSTGRES_PORT")
@@ -17,7 +16,6 @@ def export_to_bigquery():
     postgres_url = f"postgresql://{PG_USER}:{PG_PASSWORD}@{PG_HOST}:{PG_PORT}/{PG_DB}"
     engine = create_engine(postgres_url)
 
-    # BigQuery config
     BQ_CREDENTIALS = os.getenv("GOOGLE_CREDENTIALS_PATH")
     BQ_PROJECT = os.getenv("BQ_PROJECT_ID")
     BQ_DATASET = os.getenv("BQ_DATASET")
@@ -25,11 +23,9 @@ def export_to_bigquery():
     if not BQ_PROJECT or not BQ_DATASET:
         raise ValueError("Missing BQ_PROJECT_ID or BQ_DATASET environment variables.")
 
-    # Set credentials path
     if BQ_CREDENTIALS:
         os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = BQ_CREDENTIALS
 
-    # Create dataset if not exists
     client = bigquery.Client(project=BQ_PROJECT)
     dataset_ref = bigquery.Dataset(f"{BQ_PROJECT}.{BQ_DATASET}")
     try:
@@ -39,7 +35,6 @@ def export_to_bigquery():
         client.create_dataset(dataset_ref)
         print(f"✅ Dataset {BQ_DATASET} created.")
 
-    # Export each table
     inspector = inspect(engine)
     table_names = inspector.get_table_names(schema=PG_SCHEMA) # type: ignore
 
