@@ -214,7 +214,7 @@ If you’re setting up the project for the first time, run the scripts in this o
 
 - [X] Add Airflow DAG for orchestration
 
-- [ ] Create Looker Studio or local dashboards
+- [X] Create Looker Studio or local dashboards
 
 - [ ] Extend validation rules with Great Expectations
 
