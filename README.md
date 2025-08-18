@@ -172,8 +172,6 @@ What it does:
 
 - 🗄️ Runs the `airflow-init` container to set up Airflow’s metadata database and initial configuration.
 
-<hr style="height:1px; background-color: darkred;">
-
 2. `2_fix_permissions.sh` — Fix Project Folder Permissions 🔐
 This script adjusts file and folder permissions so that the Airflow user inside the container (UID `50000`) can access and modify project files without permission errors.
 
@@ -195,8 +193,6 @@ What it does:
 Use this when:
 
 - ⚠️ You see permission denied errors when Airflow tries to read/write files.
-
-<hr style="height:1px; background-color: darkred;">
 
 3. `3_reset_docker.sh` — Reset Docker Environment 🔄🐳
 This script completely cleans and rebuilds your local Docker setup for the project.
@@ -224,7 +220,6 @@ Use this when:
 
 - ⚠️ There are issues with containers not working as expected.
 
-<hr style="height:1px; background-color: darkred;">
 
 #### 💡 Tip:
 If you’re setting up the project for the first time, run the scripts in this order:
