@@ -194,7 +194,7 @@ Use this when:
 
 - ⚠️ You see permission denied errors when Airflow tries to read/write files.
 
-3. `3_reset_docker.sh` — Reset Docker Environment
+3. `3_reset_docker.sh` — Reset Docker Environment 🔄🐳
 This script completely cleans and rebuilds your local Docker setup for the project.
 
 Usage:
@@ -206,13 +206,13 @@ chmod +x 3_reset_docker.sh
 
 What it does:
 
-- Stops all running containers and removes volumes/orphan containers.
+- 🛑 Stops all running containers and removes volumes/orphan containers.
 
-- Prunes unused volumes and containers.
+- 🧹 Prunes unused volumes and containers.
 
-- Rebuilds the project’s Docker image from scratch.
+- 🏗️ Rebuilds the project’s Docker image from scratch.
 
-- Starts services again with `docker compose up -d`.
+- 🚀 Starts services again with `docker compose up -d`.
 
 Use this when:
 
