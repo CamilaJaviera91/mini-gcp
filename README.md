@@ -79,7 +79,7 @@ raw data → extract → initial_validation → transform → load → final_val
 - ⚙️ [Apache Beam](https://beam.apache.org/)
 - ⚙️ [Apache Airflow](https://airflow.apache.org/)
 - 🧪 `pyspark`, `Faker`, `unidecode`, `watchdog`, `apache-beam[gcp]`, `pandas`, `python-dotenv`, `duckdb`, `sqlalchemy`, `psycopg2-binary`
-- 🐘 PostgreSQL
+- 🐘 [PostgreSQL](https://www.postgresql.org/)
 - 📦 Local folders instead of cloud storage
 
 ---
