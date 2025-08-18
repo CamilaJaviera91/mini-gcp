@@ -17,10 +17,6 @@ FILENAME_PREFIX = "raw_sales_"
 COPY_PREFIX = "copy_raw_sales_"
 
 def wait_for_non_empty_file(path, timeout=5, check_interval=0.5):
-    """
-    Waits until the file at 'path' has more than one line (i.e., header + data).
-    Returns True if the file is ready, False if it times out.
-    """
     start = time.time()
     while time.time() - start < timeout:
         try:
