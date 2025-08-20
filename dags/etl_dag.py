@@ -69,7 +69,8 @@ with DAG(
 
     second_validate_task = PythonOperator(
         task_id="final_validation",
-        python_callable=fvalidation
+        python_callable=fvalidation,
+        doc_md="""Conduct the first validation step for the DuckDB data."""
     )
 
     exportbq_task = PythonOperator(
