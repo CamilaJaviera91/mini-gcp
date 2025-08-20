@@ -4,6 +4,29 @@ This project simulates a **modern data pipeline** architecture, entirely **local
 
 ---
 
+## 📑 Table of Contents
+
+- [🐣 Mini GCP (Local Data Pipeline)](#-mini-gcp-local-data-pipeline)
+  - [🧠 Why "Mini GCP"?](#-why-mini-gcp)
+  - [⚡ Quickstart](#-quickstart)
+  - [🔄 Pipeline Flow](#-pipeline-flow)
+  - [📁 Project Structure](#-project-structure)
+  - [📊 Data Folder Overview](#-data-folder-overview)
+  - [⚙️ Tools & Libraries](#️-tools--libraries)
+  - [✅ Requirements](#-requirements)
+    - [🐍 Creating a Python Virtual Environment in VS Code](#-creating-a-python-virtual-environment-in-vs-code)
+    - [⚙️ Project Setup & Maintenance Scripts](#️-project-setup--maintenance-scripts)
+  - [⚙️ Environment & Docker Notes](#️-environment--docker-notes)
+  - [🚧 Future Improvements](#-future-improvements)
+  - [🗓️ GoogleSheets](#️-googlesheets)
+  - [📊 LookerStudio](#-lookerstudio)
+  - [📬 Feedback or Questions?](#-feedback-or-questions)
+  - [🤝 Contributing](#-contributing)
+  - [👩‍💻 Author](#-author)
+  - [📜 License](#-license)
+
+---
+
 ## 🧠 Why "Mini GCP"?
 
 This repo mimics a GCP-like modular pipeline (with stages like Cloud Functions, Dataflow, BigQuery), but:
