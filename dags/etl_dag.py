@@ -51,7 +51,8 @@ with DAG(
 
     transform_task = PythonOperator(
         task_id="transform_data_beam",
-        python_callable=transform
+        python_callable=transform,
+        doc_md="""Review the backup data, clean any corrupted records, and generate a new file."""
     )
 
     load_task = PythonOperator(
