@@ -84,7 +84,7 @@ with DAG(
     second_validate_task = PythonOperator(
         task_id="final_validation",
         python_callable=fvalidation,
-        doc_md="""Conduct the first validation step for the DuckDB data.""",
+        doc_md="""Conduct the second and final validation step for the DuckDB data.""",
         trigger_rule=TriggerRule.ALL_SUCCESS
     )
 
