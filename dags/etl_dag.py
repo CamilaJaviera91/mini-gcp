@@ -1,6 +1,6 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-from datetime import datetime
+from datetime import datetime, timedelta
 from airflow.utils.trigger_rule import TriggerRule
 import sys
 import os
@@ -18,10 +18,18 @@ from export.export_to_bigquery import export_to_bigquery as exportbq
 from export.export_to_sheets import export_to_sheets as exportsh
 
 default_args = {
-    'owner': 'CamilaJaviera',           # Person responsible for the DAG/tasks
-    'start_date': datetime(2025, 8, 6), # Date when the DAG should start scheduling
-    'depends_on_past': False,           # Task doesn't wait for previous run to succeed
-    'retries': 1,                       # Number of retry attempts if a task fails
+    'owner': 'CamilaJaviera',                # Person responsible for the DAG/tasks
+    'start_date': datetime(2025, 8, 6),      # Date when the DAG should start scheduling
+    'depends_on_past': False,                # Task doesn't wait for previous run to succeed
+    'retries': 1,                            # Number of retry attempts if a task fails
+    'retry_delay': timedelta(minutes=5),     # wait time between retries
+    'email': ['your_email@example.com'],     # email for alerts
+    'email_on_failure': True,                # send email if task fails
+    'email_on_retry': False,                 # send email when task is retried
+    'execution_timeout': timedelta(hours=1), # max time a task can run
+    'sla': timedelta(hours=2),               # expected time for task completion
+    'catchup': False,                        # avoid backfilling old runs
+    'provide_context': True,                 # pass context to tasks (older versions)
 }
 
 with DAG(
