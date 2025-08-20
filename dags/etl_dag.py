@@ -41,49 +41,57 @@ with DAG(
     extract_task = PythonOperator(
         task_id='extract_from_local',
         python_callable=extract,
-        doc_md="""Create a backup copy of the generated data."""
+        doc_md="""Create a backup copy of the generated data.""",
+        trigger_rule=TriggerRule.ALL_SUCCESS
     )
 
     first_validate_task = PythonOperator(
         task_id="initial_validation",
         python_callable=ivalidation,
-        doc_md="""Conduct the first validation step for the backup data."""
+        doc_md="""Conduct the first validation step for the backup data.""",
+        trigger_rule=TriggerRule.ALL_SUCCESS
     )
 
     transform_task = PythonOperator(
         task_id="transform_data_beam",
         python_callable=transform,
-        doc_md="""Review the backup data, clean any corrupted records, and generate a new file."""
+        doc_md="""Review the backup data, clean any corrupted records, and generate a new file.""",
+        trigger_rule=TriggerRule.ALL_SUCCESS
     )
 
     load_task = PythonOperator(
         task_id="load_to_duckdb",
         python_callable=load,
-        doc_md="""Generate a DuckDB database using the cleaned dataset."""
+        doc_md="""Generate a DuckDB database using the cleaned dataset.""",
+        trigger_rule=TriggerRule.ALL_SUCCESS
     )
 
     exportpg_task = PythonOperator(
         task_id='export_to_postgres',
         python_callable=exportpg,
-        doc_md="""Load the DuckDB data into a PostgreSQL database."""
+        doc_md="""Load the DuckDB data into a PostgreSQL database.""",
+        trigger_rule=TriggerRule.ALL_SUCCESS
     )
 
     second_validate_task = PythonOperator(
         task_id="final_validation",
         python_callable=fvalidation,
-        doc_md="""Conduct the first validation step for the DuckDB data."""
+        doc_md="""Conduct the first validation step for the DuckDB data.""",
+        trigger_rule=TriggerRule.ALL_SUCCESS
     )
 
     exportbq_task = PythonOperator(
         task_id='export_to_bigquery',
         python_callable=exportbq,
-        doc_md="""Load the PostgreSQL database into BigQuery."""
+        doc_md="""Load the PostgreSQL database into BigQuery.""",
+        trigger_rule=TriggerRule.ALL_SUCCESS
     )
 
     exportsh_task = PythonOperator(
         task_id='export_to_sheets',
         python_callable=exportsh,
-        doc_md="""Load the PostgreSQL database into GoogleSheets"""
+        doc_md="""Load the PostgreSQL database into GoogleSheets""",
+        trigger_rule=TriggerRule.ALL_SUCCESS
     )
 
     generate_task >> extract_task >> first_validate_task >> transform_task >> load_task >> exportpg_task >> second_validate_task >> exportbq_task >> exportsh_task
