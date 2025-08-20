@@ -40,6 +40,7 @@ with DAG(
     extract_task = PythonOperator(
         task_id='extract_from_local',
         python_callable=extract,
+        doc_md="""Create a backup copy of the generated data."""
     )
 
     first_validate_task = PythonOperator(
