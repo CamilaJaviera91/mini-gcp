@@ -18,10 +18,10 @@ from export.export_to_bigquery import export_to_bigquery as exportbq
 from export.export_to_sheets import export_to_sheets as exportsh
 
 default_args = {
-    'owner': 'CamilaJaviera',
-    'start_date': datetime(2025, 8, 6),
-    'depends_on_past': False,
-    'retries': 1,
+    'owner': 'CamilaJaviera',           # Person responsible for the DAG/tasks
+    'start_date': datetime(2025, 8, 6), # Date when the DAG should start scheduling
+    'depends_on_past': False,           # Task doesn't wait for previous run to succeed
+    'retries': 1,                       # Number of retry attempts if a task fails
 }
 
 with DAG(
