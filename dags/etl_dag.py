@@ -64,6 +64,7 @@ with DAG(
     exportpg_task = PythonOperator(
         task_id='export_to_postgres',
         python_callable=exportpg,
+        doc_md="""Load the DuckDB data into a PostgreSQL database."""
     )
 
     second_validate_task = PythonOperator(
