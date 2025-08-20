@@ -1,7 +1,6 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime
-
 import sys
 import os
 
@@ -35,6 +34,7 @@ with DAG(
     generate_task = PythonOperator(
         task_id='generate_fake_data',
         python_callable=generate,
+        doc_md="""Generate synthetic data to initialize the pipeline."""
     )
 
     extract_task = PythonOperator(
