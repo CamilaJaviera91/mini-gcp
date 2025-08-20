@@ -57,7 +57,8 @@ with DAG(
 
     load_task = PythonOperator(
         task_id="load_to_duckdb",
-        python_callable=load
+        python_callable=load,
+        doc_md="""Generate a DuckDB database using the cleaned dataset."""
     )
 
     exportpg_task = PythonOperator(
