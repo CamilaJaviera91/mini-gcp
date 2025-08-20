@@ -76,6 +76,7 @@ with DAG(
     exportbq_task = PythonOperator(
         task_id='export_to_bigquery',
         python_callable=exportbq,
+        doc_md="""Load the PostgreSQL database into BigQuery."""
     )
 
     exportsh_task = PythonOperator(
