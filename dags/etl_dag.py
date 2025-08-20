@@ -35,7 +35,7 @@ default_args = {
 with DAG(
     dag_id='Mini_GCP',
     default_args=default_args,
-    schedule_interval=None,
+    schedule_interval='@daily',
     catchup=False,
     description='Pipeline'
 ) as dag:
