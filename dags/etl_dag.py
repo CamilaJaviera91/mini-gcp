@@ -45,7 +45,8 @@ with DAG(
 
     first_validate_task = PythonOperator(
         task_id="initial_validation",
-        python_callable=ivalidation
+        python_callable=ivalidation,
+        doc_md="""Conduct the first validation step for the backup data."""
     )
 
     transform_task = PythonOperator(
