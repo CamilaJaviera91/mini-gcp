@@ -250,7 +250,7 @@ Every time you add a new variable in the `.env` file or edit the `docker-compose
 
 - [X] Create Looker Studio or local dashboards
 
-- [ ] Extend validation rules with Great Expectations
+- [X] Extend validation rules with Great Expectations
 
 ---
 
