@@ -82,6 +82,7 @@ with DAG(
     exportsh_task = PythonOperator(
         task_id='export_to_sheets',
         python_callable=exportsh,
+        doc_md="""Load the PostgreSQL database into GoogleSheets"""
     )
 
     generate_task >> extract_task >> first_validate_task >> transform_task >> load_task >> exportpg_task >> second_validate_task >> exportbq_task >> exportsh_task
