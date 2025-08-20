@@ -301,7 +301,7 @@ Feel free to open an issue or submit a PR!
 ```
 git checkout -b feature/my-feature
 ```
-2.Run tests and format code before pushing.
+2. Run tests and format code before pushing.
 3. Submit a Pull Request 🚀.
 
 ---
