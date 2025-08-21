@@ -1,5 +1,5 @@
 from airflow import DAG
-from airflow.operators.python import PythonOperator
+from airflow.operators.python import PythonOperator # type: ignore
 from datetime import datetime, timedelta
 from airflow.utils.trigger_rule import TriggerRule
 import sys
@@ -16,6 +16,7 @@ from export.export_to_postgres import export_to_postgres as exportpg
 from final_validation.final_validation import final_validation as fvalidation
 from export.export_to_bigquery import export_to_bigquery as exportbq
 from export.export_to_sheets import export_to_sheets as exportsh
+from log_metadata.log_metadata import log_duckdb_metadata as metadata
 
 default_args = {
     'owner': 'CamilaJaviera',                # Person responsible for the DAG/tasks
@@ -74,6 +75,19 @@ with DAG(
         trigger_rule=TriggerRule.ALL_SUCCESS
     )
 
+    log_duckdb_task = PythonOperator(
+        task_id="log_duckdb_metadata",
+        python_callable=metadata,
+        op_kwargs={
+            "db_path": "/opt/airflow/data/load/sales.duckdb",
+            "run_id": "{{ run_id }}",
+            "task_id": "load_to_duckdb",
+            "source_file": "load/sales.duckdb.parquet"
+        },
+        doc_md="""Load the logs data into a PostgreSQL database.""",
+        trigger_rule=TriggerRule.ALL_SUCCESS
+    )
+
     exportpg_task = PythonOperator(
         task_id='export_to_postgres',
         python_callable=exportpg,
@@ -102,4 +116,5 @@ with DAG(
         trigger_rule=TriggerRule.ALL_SUCCESS
     )
 
-    generate_task >> extract_task >> first_validate_task >> transform_task >> load_task >> exportpg_task >> second_validate_task >> exportbq_task >> exportsh_task
+    generate_task >> extract_task >> first_validate_task >> transform_task >> load_task >> log_duckdb_task
+    log_duckdb_task >> exportpg_task >> second_validate_task >> exportbq_task >> exportsh_task
