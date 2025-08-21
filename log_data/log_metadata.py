@@ -87,5 +87,5 @@ if __name__ == "__main__":
         db_path="/opt/airflow/data/load/sales.duckdb",
         run_id="test_run",
         task_id="load_to_duckdb",
-        source_file="transform/sales_*.parquet"
+        source_file="load/sales.parquet"
     )
