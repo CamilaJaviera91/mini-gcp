@@ -27,17 +27,19 @@ services:
     env_file:
       - .env
     volumes:
+      - ./credentials/auth.json:/home/airflow/gcloud/auth.json:z
       - ./dags:/opt/airflow/dags:z
       - ./data:/opt/airflow/data:z
       - ./export:/opt/airflow/export:z
       - ./extract:/opt/airflow/extract:z
+      - ./final_validation:/opt/airflow/final_validation:z
       - ./functions:/opt/airflow/functions:z
       - ./initial_validation:/opt/airflow/initial_validation:z
       - ./load:/opt/airflow/load:z
+      - ./log_metadata:/opt/airflow/logs:z
+      - ./metadata:/opt/airflow/log_metadata:z
       - ./scripts:/opt/airflow/scripts:z
       - ./transform:/opt/airflow/transform:z
-      - ./final_validation:/opt/airflow/final_validation:z
-      - ./logs:/opt/airflow/logs:z
     entrypoint: >
       bash -c "airflow db init &&
                airflow users create --username admin --password admin --firstname Camila --lastname Muñoz --role Admin --email camila@example.com"
@@ -57,17 +59,19 @@ services:
     env_file:
       - .env
     volumes:
+      - ./credentials/auth.json:/home/airflow/gcloud/auth.json:z
       - ./dags:/opt/airflow/dags:z
       - ./data:/opt/airflow/data:z
       - ./export:/opt/airflow/export:z
       - ./extract:/opt/airflow/extract:z
+      - ./final_validation:/opt/airflow/final_validation:z
       - ./functions:/opt/airflow/functions:z
       - ./initial_validation:/opt/airflow/initial_validation:z
       - ./load:/opt/airflow/load:z
+      - ./logs:/opt/airflow/logs:z
+      - ./log_metadata:/opt/airflow/log_metadata:z
       - ./scripts:/opt/airflow/scripts:z
       - ./transform:/opt/airflow/transform:z
-      - ./final_validation:/opt/airflow/final_validation:z
-      - ./logs:/opt/airflow/logs:z
     command: airflow webserver
     networks:
       - airflow_network
@@ -83,17 +87,19 @@ services:
     env_file:
       - .env
     volumes:
+      - ./credentials/auth.json:/home/airflow/gcloud/auth.json:z
       - ./dags:/opt/airflow/dags:z
       - ./data:/opt/airflow/data:z
       - ./export:/opt/airflow/export:z
       - ./extract:/opt/airflow/extract:z
+      - ./final_validation:/opt/airflow/final_validation:z
       - ./functions:/opt/airflow/functions:z
       - ./initial_validation:/opt/airflow/initial_validation:z
       - ./load:/opt/airflow/load:z
+      - ./logs:/opt/airflow/logs:z
+      - ./log_metadata:/opt/airflow/log_metadata:z
       - ./scripts:/opt/airflow/scripts:z
       - ./transform:/opt/airflow/transform:z
-      - ./final_validation:/opt/airflow/final_validation:z
-      - ./logs:/opt/airflow/logs:z
     command: airflow scheduler
     networks:
       - airflow_network
