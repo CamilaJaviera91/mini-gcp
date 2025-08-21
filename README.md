@@ -70,6 +70,7 @@ raw data → extract → initial_validation → transform → load → final_val
 ├── initial_validation/  # Initial quality validation
 ├── load/                # Load cleaned data into DuckDB
 ├── logs/                # Log the pipeline
+├── log_metadata/        # Log all metadata 
 ├── scripts/             # Automation scripts
 ├── transform/           # Data transformation using Apache Beam
 ├── validate/            # Schema and quality validation
