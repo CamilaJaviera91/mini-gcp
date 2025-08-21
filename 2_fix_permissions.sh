@@ -3,7 +3,7 @@
 set -e
 
 PROJECT_ROOT=$(pwd)
-FOLDERS=("credentials" "dags" "data" "export" "extract" "final_validation" "functions" "initial_validation" "load" "logs" "scripts" "transform")
+FOLDERS=("credentials" "dags" "data" "export" "extract" "final_validation" "functions" "initial_validation" "load" "log_metadata" "logs" "scripts" "transform")
 
 
 # UID and GID you want to use (airflow user inside the container)
