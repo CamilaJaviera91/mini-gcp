@@ -79,7 +79,7 @@ SPREADSHEET_ID=...
 ```
 
 > 💡 **Important:** Create a `.env` file before running the pipeline.  
-> 💡 Instructions: [Environment & Docker Notes](#-environment--docker-notes)
+> 💡 Instructions: [⚙️ Environment & Docker Notes](#-environment--docker-notes)
 ---
 
 ## 🔄 Pipeline Flow
