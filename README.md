@@ -9,6 +9,7 @@ This project simulates a **modern data pipeline** architecture, entirely **local
 - [🐣 Mini GCP (Local Data Pipeline)](#-mini-gcp-local-data-pipeline)
   - [🧠 Why "Mini GCP"?](#-why-mini-gcp)
   - [⚡ Quickstart](#-quickstart)
+    - [⚙️ Create a `.env` file](#️-create-a-env-file)
   - [🔄 Pipeline Flow](#-pipeline-flow)
   - [📁 Project Structure](#-project-structure)
   - [📊 Data Folder Overview](#-data-folder-overview)
@@ -46,6 +47,8 @@ This repo mimics a GCP-like modular pipeline (with stages like Cloud Functions, 
 git clone https://github.com/your-repo/mini-gcp.git
 cd mini-gcp
 ```
+
+### ⚙️ Create a `.env` file
 
 ---
 
