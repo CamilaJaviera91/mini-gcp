@@ -10,14 +10,14 @@ This project simulates a **modern data pipeline** architecture, entirely **local
   - [🧠 Why "Mini GCP"?](#-why-mini-gcp)
   - [⚡ Quickstart](#-quickstart)
     - [⚙️ Create a `.env` file](#️-create-a-env-file)
-  - [🔄 Pipeline Flow](#-pipeline-flow)
+  - [🔄 Pipeline Flow](#-pipeline-flowlow)
   - [📁 Project Structure](#-project-structure)
   - [📊 Data Folder Overview](#-data-folder-overview)
-  - [⚙️ Tools & Libraries](#-tools--libraries)
+  - [⚙️ Tools & Libraries](#️-tools--libraries)
   - [✅ Requirements](#-requirements)
     - [🐍 Creating a Python Virtual Environment in VS Code](#-creating-a-python-virtual-environment-in-vs-code)
-    - [⚙️ Project Setup & Maintenance Scripts](#-project-setup--maintenance-scripts)
-  - [⚙️ Environment & Docker Notes](#-environment--docker-notes)
+    - [⚙️ Project Setup & Maintenance Scripts](#️-project-setup--maintenance-scripts)
+  - [⚙️ Environment & Docker Notes](#️-environment--docker-notes)
   - [🚧 Future Improvements](#-future-improvements)
   - [📊 LookerStudio & GoogleSheets](#-lookerstudio--googlesheets)
   - [📬 Feedback or Questions?](#-feedback-or-questions)
@@ -79,7 +79,7 @@ SPREADSHEET_ID=...
 ```
 
 > 💡 **Important:** Create a `.env` file before running the pipeline.  
-> 💡 Instructions: [⚙️ Environment & Docker Notes](#-environment--docker-notes)
+> 💡 Instructions: [⚙️ Environment & Docker Notes](#️-environment--docker-notes)
 ---
 
 ## 🔄 Pipeline Flow
