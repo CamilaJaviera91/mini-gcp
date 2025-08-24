@@ -278,15 +278,11 @@ Every time you add a new variable in the `.env` file or edit the `docker-compose
 
 ---
 
-## 🗓️ GoogleSheets
+## 📊 LookerStudio & GoogleSheets:
 
-- [Sheets](https://docs.google.com/spreadsheets/d/178xzlNCJKyK7dmkyRhnoA7vkdypbRnbK14glFOHEODI/edit?gid=0#gid=0)
+- [GoogleSheets](https://docs.google.com/spreadsheets/d/178xzlNCJKyK7dmkyRhnoA7vkdypbRnbK14glFOHEODI/edit?gid=0#gid=0)
 
----
-
-## 📊 LookerStudio
-
-- [Dashboard](https://lookerstudio.google.com/u/0/reporting/1ebab84e-02b6-4370-9691-83375c31a4cd/page/tEnnC)
+- [LookerStudio](https://lookerstudio.google.com/u/0/reporting/1ebab84e-02b6-4370-9691-83375c31a4cd/page/tEnnC)
 
 ---
 
