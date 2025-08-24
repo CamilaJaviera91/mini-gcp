@@ -86,7 +86,7 @@ raw data → extract → initial_validation → transform → load → final_val
 
 - **data/extract/:** Copied file ready for transformation
 
-- **data/initial_validation/:** validation raw reports in .csv and .json
+- **data/initial_validation/:** validation reports generated from raw data.
 
 - **data/processed/:** Cleaned file after transformation
 
@@ -111,7 +111,7 @@ raw data → extract → initial_validation → transform → load → final_val
 
 ## ✅ Requirements
 
-- Python 3.8+ (In this case we're usin 3.10)
+- Python 3.8+ (In this case we're usig 3.10)
 - VS Code (Visual Studio Code)
 - PostgreSQL
 - DuckDB
