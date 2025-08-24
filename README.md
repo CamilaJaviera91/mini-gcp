@@ -50,6 +50,14 @@ cd mini-gcp
 
 ### ⚙️ Create a `.env` file
 
+- You could also show an example of what the `.env` should look like:
+
+```
+
+```
+
+> 💡 **Important:** Create a `.env` file before running the pipeline.  
+
 ---
 
 ## 🔄 Pipeline Flow
