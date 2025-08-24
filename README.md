@@ -303,7 +303,7 @@ git checkout -b feature/my-feature
 ---
 
 ## 👩‍💻 Author
-Camila Muñoz – @CamilaJaviera91
+Camila Muñoz – [@CamilaJaviera91](https://github.com/CamilaJaviera91)
 💬 Happy to connect and discuss data pipelines or open source!
 
 ---
