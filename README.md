@@ -77,7 +77,7 @@ AIRFLOW__CORE__LOAD_EXAMPLES=...
 AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=...
 AIRFLOW__WEBSERVER__SECRET_KEY=...
 
-# Bigquery
+# BigQuery
 GOOGLE_CREDENTIALS_PATH=...
 BQ_PROJECT_ID=...
 BQ_DATASET=...
@@ -126,7 +126,7 @@ raw data → extract → initial_validation → transform → load → final_val
 
 - **data/extract/:** Copied file ready for transformation
 
-- **data/initial_validation/:** validation reports generated from raw data.
+- **data/initial_validation/:** validation reports generated from raw data
 
 - **data/processed/:** Cleaned file after transformation
 
@@ -151,7 +151,7 @@ raw data → extract → initial_validation → transform → load → final_val
 
 ## ✅ Requirements
 
-- Python 3.8+ (In this case we're usig 3.10)
+- Python 3.8+ (In this case we're using 3.10)
 - VS Code (Visual Studio Code)
 - PostgreSQL
 - DuckDB
