@@ -18,7 +18,7 @@ This project simulates a **modern data pipeline** architecture, entirely **local
     - [⚙️ Project Setup & Maintenance Scripts](#️-project-setup--maintenance-scripts)
   - [⚙️ Environment & Docker Notes](#️-environment--docker-notes)
   - [🚧 Future Improvements](#-future-improvements)
-  - [📊 LookerStudio & GoogleSheets](#️-lookerStudio--googleSheets)
+  - [📊 LookerStudio & GoogleSheets]( #-lookerstudio--googlesheets)
   - [📬 Feedback or Questions?](#-feedback-or-questions)
   - [🤝 Contributing](#-contributing)
   - [👩‍💻 Author](#-author)
