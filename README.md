@@ -127,7 +127,7 @@ raw data → extract → initial_validation → transform → load → final_val
 To keep dependencies isolated and avoid conflicts, it’s a good practice to use a virtual environment for this project. Here’s how you can set it up in VS Code:
 
 1. Open your project folder in VS Code.
-2. Open the integrated terminal (Ctrl + ) or via menu: Terminal > New Terminal.
+2. Open the integrated terminal (“Ctrl + ` (backtick)”) or via menu: Terminal > New Terminal.
 3. Create a virtual environment (only once):
 
 - On Linux/macOS:
