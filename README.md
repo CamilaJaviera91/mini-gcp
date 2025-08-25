@@ -113,6 +113,7 @@ raw data → extract → initial_validation → transform → load → final_val
 ├── README.md            # You are here!
 ├── .gitignore           # Ignore files that we don't want to show
 ├── 1_init.sh            # Create 'init' docker container
+├── 2_fix_permissions.sh # Fix folder permision
 └── requirements.txt     # Python dependencies
 ```
 
