@@ -91,14 +91,14 @@ SPREADSHEET_ID=...
 ```
 generate data 
  └──> extract data  
-       └──> 1st validation 
+       └──> first validation 
              └──> transform data 
                    └──> load data
-                         └──> metadata
-                               └──> bigquery
-                                     └──> 2nd validation
-                                           └──> bigquery
-                                                 └──> googlesheets
+                         └──> log metadata
+                               └──> export to bigquery
+                                     └──> final validation
+                                           └──> export to bigquery
+                                                 └──> export to googlesheets
 ```
 
 ---
