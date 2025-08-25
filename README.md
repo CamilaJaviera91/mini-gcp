@@ -89,8 +89,8 @@ SPREADSHEET_ID=...
 ## 🔄 Pipeline Flow
 
 ```
-generate data → extract data → first validation → transform data → load data → 
-metadata → bigquery → second validation → bigquery → googlesheets
+generate data → extract data → 1st validation → transform data → load data → 
+metadata      → bigquery     → 2nd validation → bigquery       → googlesheets
 ```
 
 ---
