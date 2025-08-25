@@ -102,14 +102,14 @@ raw data → extract → initial_validation → transform → load → final_val
 ├── data/                # Data storage layer (raw, processed, validated, warehouse)
 ├── export/              # Optional: export to PostgreSQL
 ├── extract/             # Data extraction logic
+├── final_validation/    # Final quality validation
 ├── functions/           # Trigger logic (e.g., on new file)
 ├── initial_validation/  # Initial quality validation
 ├── load/                # Load cleaned data into DuckDB
+├── log_metadata/        # Log all metadata
 ├── logs/                # Log the pipeline
-├── log_metadata/        # Log all metadata 
 ├── scripts/             # Automation scripts
 ├── transform/           # Data transformation using Apache Beam
-├── validate/            # Schema and quality validation
 ├── README.md            # You are here!
 └── requirements.txt     # Python dependencies
 ```
