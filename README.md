@@ -101,7 +101,8 @@ raw data → extract → initial_validation → transform → load → final_val
 ├── dags/                # Pipeline where we run all the tasks
 ├── data/                # Data storage layer (raw, processed, validated, warehouse)
 |       ├── extract/
-|       └── fvalidation/
+|       ├── fvalidation/
+|       └── transform/
 ├── export/              # Optional: export to PostgreSQL
 ├── extract/             # Data extraction logic
 ├── final_validation/    # Final quality validation
