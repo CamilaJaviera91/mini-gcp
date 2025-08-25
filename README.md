@@ -109,7 +109,7 @@ raw data → extract → initial_validation → transform → load → final_val
 ├── export/               # Export to PostgreSQL.
 ├── extract/              # Data extraction logic.
 ├── final_validation/     # Final quality validation.
-├── functions/            # Trigger logic (e.g., on new file).
+├── functions/            # Trigger logic.
 ├── initial_validation/   # Initial quality validation.
 ├── load/                 # Load cleaned data into DuckDB.
 ├── log_metadata/         # Log all metadata.
