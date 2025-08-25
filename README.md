@@ -104,7 +104,7 @@ raw data → extract → initial_validation → transform → load → final_val
 │   ├── fvalidation/      # Last validation reports generated from raw data.
 │   ├── generate/         # Initial synthetic data.
 │   ├── ivalidation/      # Initial validation reports generated from raw data.
-│   ├── load/
+│   ├── load/             # Final data stored in DuckDB (sales.duckdb)
 │   └── transform/        # Cleaned file after transformation
 ├── export/               # Export to PostgreSQL.
 ├── extract/              # Data extraction logic.
@@ -125,15 +125,6 @@ raw data → extract → initial_validation → transform → load → final_val
 ├── Dockerfile            # How to build a container image.
 └── requirements.txt      # Python dependencies.
 ```
-
----
-
-## 📊 Data Folder Overview
-
-
-- **data/processed/:** 
-
-- **data/warehouse/:** Final data stored in DuckDB (sales.duckdb)
 
 ---
 
