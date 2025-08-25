@@ -100,9 +100,9 @@ raw data → extract → initial_validation → transform → load → final_val
 .
 ├── dags/                 # Pipeline where we run all the tasks.
 ├── data/                 # Data storage layer.
-│   ├── extract/          # Initial synthetic data
+│   ├── extract/          # Copied file ready for transformation
 │   ├── fvalidation/
-│   ├── generate/
+│   ├── generate/         # # Initial synthetic data
 │   ├── ivalidation/
 │   ├── load/
 │   └── transform/
@@ -129,8 +129,6 @@ raw data → extract → initial_validation → transform → load → final_val
 ---
 
 ## 📊 Data Folder Overview
-
-- **data/extract/:** Copied file ready for transformation
 
 - **data/initial_validation/:** validation reports generated from raw data
 
