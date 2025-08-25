@@ -98,8 +98,8 @@ raw data → extract → initial_validation → transform → load → final_val
 
 ```
 .
-├── dags/                 # Pipeline where we run all the tasks
-├── data/                 # Data storage layer (raw, processed, validated, warehouse)
+├── dags/                 # Pipeline where we run all the tasks.
+├── data/                 # Data storage layer.
 │   ├── extract/
 │   ├── fvalidation/
 │   ├── generate/
