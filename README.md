@@ -104,6 +104,7 @@ raw data → extract → initial_validation → transform → load → final_val
        ├── fvalidation/
        ├── generate/
        ├── ivalidation/
+       ├── load/
        └── transform/
 ├── export/              # Optional: export to PostgreSQL
 ├── extract/             # Data extraction logic
