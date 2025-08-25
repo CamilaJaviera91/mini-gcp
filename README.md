@@ -16,7 +16,6 @@ This project simulates a **modern data pipeline** architecture, entirely **local
     - [⚙️ Create a `.env` file](#️-create-a-env-file)
   - [🔄 Pipeline Flow](#-pipeline-flowlow)
   - [📁 Project Structure](#-project-structure)
-  - [📊 Data Folder Overview](#-data-folder-overview)
   - [⚙️ Tools & Libraries](#️-tools--libraries)
   - [✅ Requirements](#-requirements)
     - [🐍 Creating a Python Virtual Environment in VS Code](#-creating-a-python-virtual-environment-in-vs-code)
