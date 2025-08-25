@@ -105,7 +105,7 @@ raw data → extract → initial_validation → transform → load → final_val
 │   ├── generate/         # Initial synthetic data.
 │   ├── ivalidation/      # Initial validation reports generated from raw data.
 │   ├── load/
-│   └── transform/
+│   └── transform/        # Cleaned file after transformation
 ├── export/               # Export to PostgreSQL.
 ├── extract/              # Data extraction logic.
 ├── final_validation/     # Final quality validation.
@@ -130,11 +130,8 @@ raw data → extract → initial_validation → transform → load → final_val
 
 ## 📊 Data Folder Overview
 
-- **data/initial_validation/:** 
 
-- **data/processed/:** Cleaned file after transformation
-
-- **data/validation/:** Schema reports in .csv and .json
+- **data/processed/:** 
 
 - **data/warehouse/:** Final data stored in DuckDB (sales.duckdb)
 
