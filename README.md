@@ -102,6 +102,8 @@ raw data → extract → initial_validation → transform → load → final_val
 ├── data/                # Data storage layer (raw, processed, validated, warehouse)
 |       ├── extract/
 |       ├── fvalidation/
+|       ├── generate/
+|       ├── ivalidation/
 |       └── transform/
 ├── export/              # Optional: export to PostgreSQL
 ├── extract/             # Data extraction logic
