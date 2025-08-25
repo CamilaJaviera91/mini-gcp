@@ -112,6 +112,7 @@ raw data → extract → initial_validation → transform → load → final_val
 ├── transform/           # Data transformation using Apache Beam
 ├── README.md            # You are here!
 ├── .gitignore           # Ignore files that we don't want to show
+├── 1_init.sh            # Create 'init' docker container
 └── requirements.txt     # Python dependencies
 ```
 
