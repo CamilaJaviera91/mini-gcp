@@ -121,6 +121,7 @@ raw data → extract → initial_validation → transform → load → final_val
 ├── 1_init.sh             # Create 'init' docker container
 ├── 2_fix_permissions.sh  # Fix folders permision
 ├── 3_reset_docker.sh     # Reset docker containers
+├── docker-compose.yml    # Create docker containers
 └── requirements.txt      # Python dependencies
 ```
 
