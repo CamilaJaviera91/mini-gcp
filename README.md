@@ -98,30 +98,30 @@ raw data → extract → initial_validation → transform → load → final_val
 
 ```
 .
-├── dags/                # Pipeline where we run all the tasks
-└── data/                # Data storage layer (raw, processed, validated, warehouse)
-       ├── extract/
-       ├── fvalidation/
-       ├── generate/
-       ├── ivalidation/
-       ├── load/
-       └── transform/
-├── export/              # Optional: export to PostgreSQL
-├── extract/             # Data extraction logic
-├── final_validation/    # Final quality validation
-├── functions/           # Trigger logic (e.g., on new file)
-├── initial_validation/  # Initial quality validation
-├── load/                # Load cleaned data into DuckDB
-├── log_metadata/        # Log all metadata
-├── logs/                # Log the pipeline
-├── scripts/             # Automation scripts
-├── transform/           # Data transformation using Apache Beam
-├── README.md            # You are here!
-├── .gitignore           # Ignore files that we don't want to show
-├── 1_init.sh            # Create 'init' docker container
-├── 2_fix_permissions.sh # Fix folders permision
-├── 3_reset_docker.sh    # Reset docker containers
-└── requirements.txt     # Python dependencies
+├── dags/                 # Pipeline where we run all the tasks
+└── data/                 # Data storage layer (raw, processed, validated, warehouse)
+      ├── extract/
+      ├── fvalidation/
+      ├── generate/
+      ├── ivalidation/
+      ├── load/
+      └── transform/
+├── export/               # Export to PostgreSQL
+├── extract/              # Data extraction logic
+├── final_validation/     # Final quality validation
+├── functions/            # Trigger logic (e.g., on new file)
+├── initial_validation/   # Initial quality validation
+├── load/                 # Load cleaned data into DuckDB
+├── log_metadata/         # Log all metadata
+├── logs/                 # Log the pipeline
+├── scripts/              # Automation scripts
+├── transform/            # Data transformation using Apache Beam
+├── README.md             # You are here!
+├── .gitignore            # Ignore files that we don't want to show
+├── 1_init.sh             # Create 'init' docker container
+├── 2_fix_permissions.sh  # Fix folders permision
+├── 3_reset_docker.sh     # Reset docker containers
+└── requirements.txt      # Python dependencies
 ```
 
 ---
