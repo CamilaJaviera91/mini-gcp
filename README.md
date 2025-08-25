@@ -111,6 +111,7 @@ raw data → extract → initial_validation → transform → load → final_val
 ├── scripts/             # Automation scripts
 ├── transform/           # Data transformation using Apache Beam
 ├── README.md            # You are here!
+├── .gitignore           # Ignore files that we don't want to show
 └── requirements.txt     # Python dependencies
 ```
 
