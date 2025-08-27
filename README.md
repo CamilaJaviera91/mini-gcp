@@ -112,8 +112,9 @@ generate data
 │   ├── fvalidation/      # Last validation reports generated from raw data.
 │   ├── generate/         # Initial synthetic data.
 │   ├── ivalidation/      # Initial validation reports generated from raw data.
-│   ├── load/             # Final data stored in DuckDB (sales.duckdb)
-│   └── transform/        # Cleaned file after transformation
+│   ├── load/             # Final data stored in DuckDB.
+│   ├── tests/            # show findings.
+│   └── transform/        # Cleaned file after transformation.
 ├── export/               # Export to PostgreSQL.
 ├── extract/              # Data extraction logic.
 ├── final_validation/     # Final quality validation.
