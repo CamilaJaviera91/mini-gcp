@@ -316,11 +316,11 @@ Every time you add a new variable in the `.env` file or edit the `docker-compose
 
 ## 🚧 Future Improvements
 
-- [X] Add Airflow DAG for orchestration
+- [X] Add Airflow DAG for orchestration.
 
-- [X] Create Looker Studio or local dashboards
+- [X] Create Looker Studio or local dashboards.
 
-- [X] Extend validation rules with Great Expectations
+- [X] Extend validation rules with Great Expectations.
 
 ---
 
