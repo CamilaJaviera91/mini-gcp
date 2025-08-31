@@ -151,7 +151,7 @@ generate data
 - 🐘 [PostgreSQL](https://www.postgresql.org/)
 - 🐋 [Docker / Docker Compose](https://docs.docker.com/compose/)
 - 🧪 `pyspark`, `Faker`, `unidecode`, `watchdog`, `apache-beam[gcp]`, `pandas`, `python-dotenv`, `duckdb`, `sqlalchemy`, `psycopg2-binary`
-- 📦 Local folders instead of cloud storage
+- 📦 Local folders instead of cloud storage.
 
 ---
 
