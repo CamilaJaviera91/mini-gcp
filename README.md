@@ -334,7 +334,7 @@ Every time you add a new variable in the `.env` file or edit the `docker-compose
 
 ## 📬 Feedback or Questions?
 
-Feel free to open an issue or submit a PR!
+Feel free to open an issue or submit a PR! <3
 
 ---
 
