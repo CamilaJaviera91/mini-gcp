@@ -1,4 +1,8 @@
-[![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white)](https://www.python.org/) [![DuckDB](https://img.shields.io/badge/DuckDB-Ready-yellow?logo=duckdb&logoColor=white)](https://duckdb.org/) [![Apache Beam](https://img.shields.io/badge/Apache%20Beam-Ready-orange?logo=apache&logoColor=white)](https://beam.apache.org/) [![Apache Airflow](https://img.shields.io/badge/Apache%20Airflow-Orchestration-brightgreen?logo=apacheairflow&logoColor=white)](https://airflow.apache.org/) [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-336791?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white)](https://www.python.org/) 
+[![DuckDB](https://img.shields.io/badge/DuckDB-Ready-yellow?logo=duckdb&logoColor=white)](https://duckdb.org/) 
+[![Apache Beam](https://img.shields.io/badge/Apache%20Beam-Ready-orange?logo=apache&logoColor=white)](https://beam.apache.org/) 
+[![Apache Airflow](https://img.shields.io/badge/Apache%20Airflow-Orchestration-brightgreen?logo=apacheairflow&logoColor=white)](https://airflow.apache.org/) 
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-336791?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 
 
 
