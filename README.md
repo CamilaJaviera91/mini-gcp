@@ -38,11 +38,11 @@ This project simulates a **local modern data pipeline** architecture. It follows
 
 This repo mimics a GCP-like modular pipeline (with stages like Cloud Functions, Dataflow, BigQuery), but:
 
-- 🆓 Works locally
+- 🆓 Works locally.
 
-- 🧪 Ideal for testing and learning
+- 🧪 Ideal for testing and learning.
 
-- 💸 No cloud cost involved
+- 💸 No cloud cost involved.
 
 ---
 
