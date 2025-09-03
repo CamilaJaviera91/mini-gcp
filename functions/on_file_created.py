@@ -56,4 +56,3 @@ if __name__ == "__main__":
         logging.info("🛑 Stopping file watcher...")
         observer.stop()
     observer.join()
-    
