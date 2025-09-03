@@ -32,4 +32,3 @@ def final_validation():
 
 if __name__ == "__main__":
     final_validation()
-    
