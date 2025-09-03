@@ -30,7 +30,7 @@ default_args = {
     'execution_timeout': timedelta(hours=1),
     'sla': timedelta(hours=2),
     'catchup': False,
-    'provide_context': True,
+    'provide_context': True
 }
 
 with DAG(
@@ -38,7 +38,8 @@ with DAG(
     default_args=default_args,
     schedule_interval='@daily',
     catchup=False,
-    description='Pipeline'
+    description='Pipeline',
+    max_active_runs=1
 ) as dag:
 
     generate_task = PythonOperator(
