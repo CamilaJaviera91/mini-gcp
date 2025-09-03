@@ -68,7 +68,7 @@ def log_duckdb_metadata(db_path: str, run_id: str, task_id: str, source_file: st
     if not tables:
         raise ValueError("No tables found in DuckDB file")
     
-    table_name = tables[-1][0]  # tables is a list of tuples: [('table_name',), ...]
+    table_name = tables[-1][0]
     
     row_count = con.execute(f"SELECT COUNT(*) FROM {table_name}").fetchone()[0]
     con.close()
