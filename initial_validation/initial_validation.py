@@ -1,4 +1,3 @@
-# validate_data.py
 import pandas as pd
 import json
 import os
@@ -7,6 +6,7 @@ import numpy as np
 
 def initial_validation(input_pattern="data/extract/copy_raw_sales_*.csv",
                         output_dir="data/ivalidation"):
+
     csv_files = sorted(glob.glob(input_pattern))
     if not csv_files:
         raise FileNotFoundError(f"❌ No se encontraron archivos con patrón '{input_pattern}'")
@@ -14,10 +14,8 @@ def initial_validation(input_pattern="data/extract/copy_raw_sales_*.csv",
     latest_file = csv_files[-1]
     print(f"📄 Initial Validation: {latest_file}")
 
-    # Load data
     df = pd.read_csv(latest_file)
 
-    # Run validation
     report = _validate_data(df)
 
     serializable_report = _convert_to_serializable(report)
@@ -42,13 +40,13 @@ def _validate_data(df: pd.DataFrame):
     results["total_rows"] = len(df)
     results["nulls_per_column"] = df.isnull().sum().to_dict()
 
-    results["missing_customers"] = df["customer"].isnull().sum() + (df["customer"] == "").sum()
+    results["missing_customers"] = df["customer"].isna().sum() + (df["customer"] == "").sum()
 
     df["price"] = pd.to_numeric(df["price"], errors="coerce")
-    results["invalid_prices"] = df["price"].isnull().sum() + (df["price"] <= 0).sum()
+    results["invalid_prices"] = (df["price"]== "not_a_price").sum()
 
     df["sale_date"] = pd.to_datetime(df["sale_date"], errors="coerce")
-    results["invalid_dates"] = df["sale_date"].isnull().sum()
+    results["invalid_dates"] = df["sale_date"].isna().sum()
 
     min_date = df["sale_date"].min()
     max_date = df["sale_date"].max()
@@ -76,4 +74,3 @@ def _convert_to_serializable(obj):
 
 if __name__ == "__main__":
     initial_validation()
-    
