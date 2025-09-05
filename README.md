@@ -21,14 +21,10 @@ A **local modern data pipeline** that mimics GCP services. It uses **Python, Apa
 ---
 
 ## 🧠 Why "Mini GCP"?
-
-This repo mimics a GCP-like modular pipeline (with stages like Cloud Functions, Dataflow, BigQuery), but:
-
-- 🆓 Works locally.
-
-- 🧪 Ideal for testing and learning.
-
-- 💸 No cloud cost involved.
+This repo mimics GCP-like services (Cloud Functions, Dataflow, BigQuery) but runs **entirely local**:  
+- 🆓 No cloud costs  
+- 🧪 Great for testing & learning  
+- 💻 Works offline 
 
 ---
 
