@@ -87,33 +87,20 @@ generate data
 
 ```
 .
-├── dags/                 # Pipeline where we run all the tasks.
-├── data/                 # Data storage layer.
-│   ├── extract/          # Copied file ready for transformation.
-│   ├── fvalidation/      # Last validation reports generated from raw data.
-│   ├── generate/         # Initial synthetic data.
-│   ├── ivalidation/      # Initial validation reports generated from raw data.
-│   ├── load/             # Final data stored in DuckDB.
-│   ├── tests/            # show findings.
-│   └── transform/        # Cleaned file after transformation.
-├── export/               # Export to PostgreSQL.
-├── extract/              # Data extraction logic.
-├── final_validation/     # Final quality validation.
-├── functions/            # Trigger logic.
-├── initial_validation/   # Initial quality validation.
-├── load/                 # Load cleaned data into DuckDB.
-├── log_metadata/         # Log all metadata.
-├── logs/                 # Log the pipeline.
-├── scripts/              # Automation scripts.
-├── transform/            # Data transformation using Apache Beam.
-├── README.md             # You are here!
-├── .gitignore            # Ignore files that we don't want to show.
-├── 1_init.sh             # Create 'init' docker container.
-├── 2_fix_permissions.sh  # Fix folders permision.
-├── 3_reset_docker.sh     # Reset docker containers.
-├── docker-compose.yml    # Create docker containers.
-├── Dockerfile            # How to build a container image.
-└── requirements.txt      # Python dependencies.
+.
+├── dags/                 # Airflow DAGs
+├── data/                 # Data storage (raw, transformed, validations, etc.)
+├── extract/              # Data extraction logic
+├── transform/            # Data transformation (Apache Beam)
+├── load/                 # Load into DuckDB/PostgreSQL
+├── initial_validation/   # First quality checks
+├── final_validation/     # Final quality checks
+├── log_metadata/         # Metadata logging
+├── functions/            # Triggers
+├── scripts/              # Helper scripts
+├── docker-compose.yml    # Local environment
+├── Dockerfile            # Container image
+└── requirements.txt      # Dependencies
 ```
 
 ---
