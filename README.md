@@ -101,8 +101,7 @@ generate data
                                     └──> log metadata
                                           └──> export to bigquery
                                                 └──> final validation
-                                                      └──> export to bigquery
-                                                            └──> export to googlesheets
+                                                      └──> export to googlesheets
 ```
 
 ---
