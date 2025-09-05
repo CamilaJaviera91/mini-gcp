@@ -4,11 +4,9 @@
 [![Apache Airflow](https://img.shields.io/badge/Apache%20Airflow-Orchestration-brightgreen?logo=apacheairflow&logoColor=white&style=for-the-badge)](https://airflow.apache.org/) 
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-336791?logo=postgresql&logoColor=white&style=for-the-badge)](https://www.postgresql.org/)
 
-
-
 # 🐣 Mini GCP (Local Data Pipeline)
 
-This project simulates a **local modern data pipeline** architecture. It follows a modular design to extract, transform, load, validate, and analyze synthetic sales data using Python, Apache Beam, DuckDB, and PostgreSQL.
+A **local modern data pipeline** that mimics GCP services. It uses **Python, Apache Beam, Airflow, DuckDB, and PostgreSQL** to extract, transform, load, validate, and analyze synthetic sales data.  
 
 ---
 
