@@ -1,4 +1,5 @@
-[![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white&style=for-the-badge)](https://www.python.org/) 
+[![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white&style=for-the-badge)](https://www.python.org/)
+
 [![DuckDB](https://img.shields.io/badge/DuckDB-Ready-yellow?logo=duckdb&logoColor=white&style=for-the-badge)](https://duckdb.org/) 
 [![Apache Beam](https://img.shields.io/badge/Apache%20Beam-Ready-orange?logo=apache&logoColor=white&style=for-the-badge)](https://beam.apache.org/) 
 [![Apache Airflow](https://img.shields.io/badge/Apache%20Airflow-Orchestration-brightgreen?logo=apacheairflow&logoColor=white&style=for-the-badge)](https://airflow.apache.org/) 
