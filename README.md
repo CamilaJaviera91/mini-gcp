@@ -11,24 +11,12 @@ A **local modern data pipeline** that mimics GCP services. It uses **Python, Apa
 ---
 
 ## 📑 Table of Contents
-
-- [🐣 Mini GCP (Local Data Pipeline)](#-mini-gcp-local-data-pipeline)
-  - [🧠 Why "Mini GCP"?](#-why-mini-gcp)
-  - [⚡ Quickstart](#-quickstart)
-    - [⚙️ Create a `.env` file](#️-create-a-env-file)
-  - [🔄 Pipeline Flow](#-pipeline-flow)
-  - [📁 Project Structure](#-project-structure)
-  - [⚙️ Tools & Libraries](#️-tools--libraries)
-  - [✅ Requirements](#-requirements)
-    - [🐍 Creating a Python Virtual Environment in VS Code](#-creating-a-python-virtual-environment-in-vs-code)
-    - [⚙️ Project Setup & Maintenance Scripts](#️-project-setup--maintenance-scripts)
-  - [⚙️ Environment & Docker Notes](#️-environment--docker-notes)
-  - [🚧 Future Improvements](#-future-improvements)
-  - [📊 LookerStudio & GoogleSheets](#-lookerstudio--googlesheets)
-  - [📬 Feedback or Questions?](#-feedback-or-questions)
-  - [🤝 Contributing](#-contributing)
-  - [👩‍💻 Author](#-author)
-  - [📜 License](#-license)
+- [🧠 Why "Mini GCP"?](#-why-mini-gcp)
+- [⚡ Quickstart](#-quickstart)
+- [🔄 Pipeline Flow](#-pipeline-flow)
+- [📁 Project Structure](#-project-structure)
+- [⚙️ Tools & Libraries](#-tools--libraries)
+- [📜 License](#-license)
 
 ---
 
