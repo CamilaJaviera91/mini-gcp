@@ -70,15 +70,15 @@ SPREADSHEET_ID=...
 
 ```
 generate data 
-      └──> test data
-            └──> extract data  
-                  └──> first validation 
-                        └──> transform data 
-                              └──> load data
-                                    └──> log metadata
-                                          └──> export to bigquery
-                                                └──> final validation
-                                                      └──> export to googlesheets
+   └──> test data
+         └──> extract data  
+               └──> initial validation 
+                     └──> transform data 
+                           └──> load data
+                                 └──> log metadata
+                                       └──> export to BigQuery
+                                             └──> final validation
+                                                   └──> export to Google Sheets
 ```
 
 ---
