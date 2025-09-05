@@ -145,8 +145,8 @@ generate data
 
 - 🐍 [Python](https://www.python.org/)
 - 🦆 [DuckDB](https://duckdb.org/)
-- ⚙️ [Apache Beam](https://beam.apache.org/)
-- ⚙️ [Apache Airflow](https://airflow.apache.org/)
+- 🛠️ [Apache Beam](https://beam.apache.org/)
+- 🛠️ [Apache Airflow](https://airflow.apache.org/)
 - 🐘 [PostgreSQL](https://www.postgresql.org/)
 - 🐋 [Docker / Docker Compose](https://docs.docker.com/compose/)
 - 🧪 `pyspark`, `Faker`, `unidecode`, `watchdog`, `apache-beam[gcp]`, `pandas`, `python-dotenv`, `duckdb`, `sqlalchemy`, `psycopg2-binary`
@@ -221,7 +221,7 @@ Now VS Code will use the virtual environment’s Python for running and debuggin
 
 ---
 
-### ⚙️ Project Setup & Maintenance Scripts
+### 🛠️ Project Setup & Maintenance Scripts
 
 This project includes a set of helper scripts to simplify initial setup, resetting the environment, and fixing file permissions when working with Airflow and Docker locally.
 
@@ -300,7 +300,7 @@ If you’re setting up the project for the first time, run the scripts in this o
 
 ---
 
-## ⚙️ Environment & Docker Notes  
+## 🛠️ Environment & Docker Notes  
 
 💡 **Important:**  
 Every time you add a new variable in the `.env` file or edit the `docker-compose.yml` file, you need to **restart Docker** using the script:  
