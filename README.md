@@ -4,7 +4,8 @@
 
 [![Apache Beam](https://img.shields.io/badge/Apache%20Beam-Ready-orange?logo=apache&logoColor=white&style=for-the-badge)](https://beam.apache.org/)
 
-[![Apache Airflow](https://img.shields.io/badge/Apache%20Airflow-Orchestration-brightgreen?logo=apacheairflow&logoColor=white&style=for-the-badge)](https://airflow.apache.org/) 
+[![Apache Airflow](https://img.shields.io/badge/Apache%20Airflow-Orchestration-brightgreen?logo=apacheairflow&logoColor=white&style=for-the-badge)](https://airflow.apache.org/)
+
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-336791?logo=postgresql&logoColor=white&style=for-the-badge)](https://www.postgresql.org/)
 
 # 🐣 Mini GCP (Local Data Pipeline)
