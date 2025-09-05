@@ -18,7 +18,7 @@ This project simulates a **local modern data pipeline** architecture. It follows
   - [🧠 Why "Mini GCP"?](#-why-mini-gcp)
   - [⚡ Quickstart](#-quickstart)
     - [⚙️ Create a `.env` file](#️-create-a-env-file)
-  - [🔄 Pipeline Flow](#-pipeline-flowlow)
+  - [🔄 Pipeline Flow](#-pipeline-flow)
   - [📁 Project Structure](#-project-structure)
   - [⚙️ Tools & Libraries](#️-tools--libraries)
   - [✅ Requirements](#-requirements)
