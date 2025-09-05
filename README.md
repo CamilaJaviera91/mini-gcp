@@ -109,8 +109,8 @@ generate data
 
 - 🐍 [Python](https://www.python.org/)
 - 🦆 [DuckDB](https://duckdb.org/)
-- 🛠️ [Apache Beam](https://beam.apache.org/)
-- 🛠️ [Apache Airflow](https://airflow.apache.org/)
+- ⚙️ [Apache Beam](https://beam.apache.org/)
+- ✈️ [Apache Airflow](https://airflow.apache.org/)
 - 🐘 [PostgreSQL](https://www.postgresql.org/)
 - 🐋 [Docker / Docker Compose](https://docs.docker.com/compose/)
 - 🧪 `pyspark`, `Faker`, `unidecode`, `watchdog`, `apache-beam[gcp]`, `pandas`, `python-dotenv`, `duckdb`, `sqlalchemy`, `psycopg2-binary`
